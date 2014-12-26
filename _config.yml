@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: Frederik Durant
+title: Frederik Durant's .data blog
 locale: en_US
-description: On a sabbatical in NYC, studying data science
-logo: site-logo.png
+description: On a data science sabbatical in NYC
+logo: dot_data_512x512.png
 search: true
 url: 
 
