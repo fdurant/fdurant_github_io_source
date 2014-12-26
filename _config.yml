@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Frederik Durant
 locale: en_US
-description: Describe your website here.
+description: On a sabbatical in NYC, studying data science
 logo: site-logo.png
 search: true
 url: 
@@ -32,15 +32,15 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: Frederik Durant
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: #you@email.com
   disqus-shortname:
   twitter: #username
-  facebook: #username
-  github: #username
+  facebook: frederik.durant.7
+  github: fdurant
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: fdurant
   instagram: #username
   flickr: #username
   tumblr: #username
