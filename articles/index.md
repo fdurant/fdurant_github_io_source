@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sample Articles
-excerpt: "An archive of articles sorted by date."
+title: Data Science Projects
+excerpt: "An overview of my data science projects at the Metis Bootcamp"
 ---
 
 <ul class="post-list">

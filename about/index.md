@@ -1,26 +1,26 @@
 ---
 layout: page
-title: About the Jekyll Theme
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
-modified: 2014-08-08T19:44:38.564948-04:00
+title: About this blog
+modified: 2014-12-26T17:15:00.00-00:00
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: NYC_sunset_cropped_1024x256.jpg
+  credit: Jerry Ferguson
+  creditlink: http://www.flickr.com/photos/fergusonphotography/3056953388/
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+Nice to meet you! My name is Frederik Durant, I'm a native from [Brussels, Belgium][brussels]. From January through April 2015, I'm taking a (self-sponsored) sabbatical from [Nuance Communications][nuance], where I work as R&D manager of Natural Language Understanding, serving Automotive customers. Seventy-five percent of my sabbatical is devoted to a 12-week [Data Science Bootcamp][metis-datascience] at [Metis][metis] in the amazing city of New York.
 
-## So Simple Theme is all about:
+This .data ("dot data") blog is here to share my experiences before, during and after this sabbatical. You can expect stories on professional (data science) as well as more personal topics (such as life in NYC & Brooklyn, where I stay at the [Krash][krash] co-housing facility).
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+Why its name? Well, I started my career just before the [dotcom][dotcom] era.  These days of data (science) hype somehow remind me of them, that's all. And it surely allows for a nice logo :-)
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+Should you wish to get in touch with me, please do so through my [LinkedIn][linkedin] and/or [Facebook][facebook] page(s).
 
-[^1]: Example: *domain.com/category-name/post-title*
+[brussels]: http://en.wikipedia.org/wiki/Brussels
+[nuance]: http://www.nuance.com/
+[metis]: http://www.thisismetis.com/
+[metis-datascience]: http://www.thisismetis.com/data-science
+[krash]: https://krash.io
+[linkedin]: https://www.linkedin.com/in/fdurant
+[facebook]: https://www.facebook.com/frederik.durant.7
+[dotcom]: http://en.wikipedia.org/wiki/Dot-com_bubble
