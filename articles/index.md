@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Science Projects
+title: Data Science Project Portfolio
 excerpt: "An overview of my data science projects at the Metis Bootcamp"
 ---
 
