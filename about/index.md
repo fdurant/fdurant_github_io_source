@@ -14,13 +14,9 @@ This .data ("dot data") blog is here to share my experiences before, during and 
 
 Why .data as a name? Well, I started my career in the early [dotcom][dotcom] era. These days of data (science) hype somehow remind me of them, that's all. And it surely allows for a nice logo :-)
 
-Should you wish to get in touch with me, please do so through my [LinkedIn][linkedin] and/or [Facebook][facebook] page(s).
-
 [brussels]: http://en.wikipedia.org/wiki/Brussels
 [nuance]: http://www.nuance.com/
 [metis]: http://www.thisismetis.com/
 [metis-datascience]: http://www.thisismetis.com/data-science
 [krash]: https://krash.io
-[linkedin]: https://www.linkedin.com/in/fdurant
-[facebook]: https://www.facebook.com/frederik.durant.7
 [dotcom]: http://en.wikipedia.org/wiki/Dot-com_bubble
