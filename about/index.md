@@ -4,7 +4,7 @@ title: About this blog
 modified: 2014-12-26T17:15:00.00-00:00
 image:
   feature: NYC_sunset_cropped_1024x256.jpg
-  credit: Jerry Ferguson
+  credit: Jerry Ferguson (cropped from original)
   creditlink: http://www.flickr.com/photos/fergusonphotography/3056953388/
 ---
 

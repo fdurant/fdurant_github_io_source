@@ -4,7 +4,7 @@ title: Blog
 excerpt: "An archive of blog posts sorted by date."
 image:
   feature: pen_and_letter_1024x256.jpg
-  credit: Jonathan Kim
+  credit: Jonathan Kim (cropped from original)
   creditlink: https://www.flickr.com/photos/jkim1/452830868
 ---
 
