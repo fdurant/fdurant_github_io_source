@@ -1,7 +1,11 @@
 ---
 layout: page
-title: Articles
-excerpt: ""
+title: Project Portfolio
+excerpt: "An overview of my data science projects at the Metis Bootcamp"
+image:
+  feature: network_graph_1024x256.png
+  credit: Frederik Durant (using gephi)
+  creditlink: https://gephi.github.io/
 ---
 
 <ul class="post-list">
