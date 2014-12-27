@@ -2,6 +2,10 @@
 layout: page
 title: Project Portfolio
 excerpt: "An overview of my data science projects at the Metis Bootcamp"
+image:
+  feature: portfolio_1024x256.jpg
+  credit: net_efekt (cropped from original)
+  creditlink: https://www.flickr.com/photos/wheatfields/4156011254
 ---
 
 <ul class="post-list">
