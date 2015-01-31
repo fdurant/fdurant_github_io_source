@@ -24,7 +24,7 @@ The scope of my personal project shrunk as the data came in and the days went by
 In the end, after many iterations in [IPython][ipython], I got to fit a number of multilinear regression models with [statsmodels](http://statsmodels.sourceforge.net/0.5.0/regression.html), using
 [sklearn][sklearn_mse] for model evaluation ([root-mean-squared error][rmse]), and the inevitable [pyplot][pyplot] for visualization.
 
-On Friday, the whole class delivered their presentations. My first-ever [Keynote presentation][project_luther_presentation] was for a ficticious investor known by the name of Dino Brangelino. My conclusion: knowing the box office revenue of the opening weekend reduces total revenue prediction error by 15%.
+On Friday, the whole class delivered their presentations. My first-ever [Keynote presentation][project_luther_presentation] was for a ficticious investor known by the name of Dino Brangelino. My conclusion: knowing the box office revenue of the opening weekend -on top of the production budget- reduces total revenue prediction error by 15%.
 
 <figure>
 	<img src="/images/movieproject_presentation_1.jpg"/>
@@ -35,7 +35,7 @@ A not-so-random sample of subjects from my fellow students' talks:
 
 * how to convince laggards among the actors and actresses to go on Twitter, by predicting how many followers they would have if they did
 
-* can the monthly consumer optimism predict the prevalence of certain movie genres over others?
+* can monthly consumer optimism predict the mutual prevalence of movie genres?
 
 * does the choice of a distributor help to secure an Oscar nomination?
 
