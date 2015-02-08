@@ -13,7 +13,7 @@ This week I hugged a [Googler][cassie_kozyrkov], yes I did. How, why, huh? Let m
 
 On top of providing the formal lectures, challenges and project work, our [bootcamp][metis-datascience] regularly invites speakers from industry.
 So last Thursday, we were enlightened on the art of working with data in a scientifically and ethically sound fashion by no less than
-a super-smart and super-enthousiastic [Googler][cassie_kozyrkov] - my apologies for the double tautology.
+a super-smart and super-enthusiastic [Googler][cassie_kozyrkov] - my apologies for the double tautology.
 
 To get the interaction going, we, mere mortal students, were offered a multiple (6) choice question. The last one of which was,
 obviously, _none of the above_.
