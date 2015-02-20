@@ -1,0 +1,285 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="nv.d3.css">
+  <link rel="stylesheet" type="text/css" href="my.css">
+  <link rel="stylesheet" type="text/css" href="d3.slider.css">
+  <link rel="stylesheet" type="text/css" href="ProfitHeatMap.css">
+  <title>Project: Target Marketing for a Bank</title>
+  <!--script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script-->
+  <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+  <!--script src="nv.d3.min.js" charset="utf-8"></script)-->
+  <script src="nv.d3.js" charset="utf-8"></script>
+  <script src="d3.slider.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <p>During week 4, 5 and 6, the Metis Data Science Bootcamp zoomed in on the following technologies:</p>
+    <ul>
+      <li>SQL and mySQL in the <a href="https://www.digitalocean.com" target="_blank">cloud</a> (0.5 day);</li>
+      <li>Supervised learning with <a href="http://scikit-learn.org/" target="_blank">scikit-learn</a>
+	and <a href="http://statsmodels.sourceforge.net/" target="_blank">statsmodels</a> (1.5 week);</li>
+      <li>Interactive visualization with <a href="http://matplotlib.org/" target="_blank">matplotlib</a>, <a href="http://nbviewer.ipython.org/github/esss/ipython/blob/master/examples/Interactive%20Widgets/Index.ipynb" target="_blank">interactive widgets in iPython</a>, <a href="http://mpld3.github.io/" target="_blank">mpld3</a> and especially <a href="http://d3js.org/" target="_blank">D3.js</a> (1.5 week).</li>
+      </li>
+    </ul>
+
+    <p>The remainder of this article reports on the project and business context in which these technologies were applied.</p>
+
+    <h2>Business questions</h2>
+
+    <p>A bank wants to run a targeted marketing campaign in order to <strong>sell a term deposit product</strong>.</p>
+
+    <p>Given a certain (but unspecified) <strong>campaign budget</strong>:</p>
+
+    <ul>
+      <li><strong>Which customers</strong> should it target?</li>
+      <li>In <strong>what order</strong>?</li>
+      <li>Is it wise to spend the <strong>complete</strong> campaign budget?</li>
+    </ul>
+
+    <p>The bank has a <a href="https://archive.ics.uci.edu/ml/datasets/Bank+Marketing" target="_blank">database of 41K past customer 
+	contact records</a>, with an indication of successful and failed sales of this product.</p>
+
+    <h2>Technical assignment</h2>
+
+    <p>Using the historic customer database, build a model to:</p>
+
+    <ul>
+      <li><strong>predict</strong> which customers are (more) likely to buy the term deposit product</li>
+      <li><strong>rank</strong> customers by their propensity to buy the product</li>
+    </ul>
+
+    <p>To evaluate model performance, produce for each machine learning algorithm:</p>
+
+    <ul>
+      <li>an <a href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic" target="_blank">ROC</a> curve</li>
+      <li>a <a href="http://en.wikipedia.org/wiki/Lift_(data_mining)">lift</a> curve</li>
+      <li>a profit visualization</li>
+    </ul>
+
+    <h2>Data preparation, feature selection and model building</h2>
+
+    <p>For these steps, please check the <a href="http://nbviewer.ipython.org/github/fdurant/mcnulty_banking/blob/master/project_mcnulty_banking.ipynb" target="_blank">iPython notebook</a>, also available in our <a href="https://github.com/fdurant/mcnulty_banking" target="_">GitHub repository</a>.</p>
+
+    <h2>Model evaluation</h2>
+
+    <p>How well do our models perform? And much more importantly: how do they contribute to answering the business questions?</p>
+    <p>Let's start by looking at the <a href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic" target="_blank">ROC curve</a>.</p>
+
+    <h3>ROC curve: between a rock and a hard place</h3>
+
+    <p>Hint: move the mouse over the graph, to highlight individual line points</p>
+
+    <svg id="roccurve" style="height:400px; width:100%; border-style:solid; border-width:1px; border-color:black;"></svg>
+    <script src="ROCCurve.js" type="text/javascript" charset="utf-8"></script>
+    <p align="right"><small>[<a href="ROCCurve.html" target="_roc">view in separate window</a>]</small></p>
+
+    <p>Inside the <a href="http://en.wikipedia.org/wiki/False_positives_and_false_negatives" target="_blank">False Positive Rate</a> intervals [0-0.07] and [0.54-1.00] (horizontal axis), the 
+      <a href="http://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a> model 
+      scores best in terms of <a href="http://en.wikipedia.org/wiki/False_positives_and_false_negatives#true_positive" target="_blank">True Positive Rate</a> (vertical axis).
+      In between these two intervals, <a href="http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" target="_blank">KNN</a> (with k = 30) is the winning model.
+      But all in all, the three algorithms play in the same league.</p>
+
+    <p>The selection of a specific FPR/TPR combination (and of a corresponding best algorithm) is for our customer to make.
+      In business terms, this means making a trade-off between:</p>
+    <ul>
+      <li>Reaching sufficiently interested customers, which will bring in revenue</li>
+      <li>In the process, annoying too many uninterested ones, and incurring the cost of making these contact</li>
+    </ul>
+
+    <p>On its own, the ROC curve does not tell us how to set the optimal threshold. Therefore, let's try to formulate the trade-off
+      more <strong>in operational terms</strong>,
+      by means of a <a href="http://en.wikipedia.org/wiki/Lift_(data_mining)" target="_blank">lift curve</a>.</p>
+
+    <h2 align="center">Lift curve: trained model vs. baseline performance</h2>
+
+    <p>From our <a href="https://archive.ics.uci.edu/ml/datasets/Bank+Marketing" target="_blank">reference dataset</a>, we know that only a fraction (&lt;10 &#37;) of our potential customers will accept an
+  offer to buy the term deposit product. The question, of course, is <strong>who</strong> these customers are. For each customer
+      in the test set, our trained models return a <strong>probability estimate</strong> of their purchase of the product.
+      This probability allows us to <strong>rank our customers</strong> accordingly, which is key to making smart(er) decisions.</p>
+
+    <p>But first, for the sake of the argument, let's assume we only know the distribution of yes/no answers in the training data set,
+      and nothing more. The (near-perfect) diagonal line from (0,0) to (100, 100) in the graph below
+      represents such a baseline case. The model behind it was built by <a href="http://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html" target="_">randomly guessing</a>
+      who might accept or reject the offer, according to this yes/no distribution.</p>
+
+    <p> So, in the baseline case, if we were to contact 20&#37; of the customers (x axis), we can expect to
+      hit approximately 20&#37; of all customers <em>who would actually buy the product</em> (y axis). This is approximately
+      true for any other percentage point along this (near-perfect) diagonal.</p>
+
+    <svg id="liftcurve" style="height:400px; width:100%; border-style:solid; border-width:1px;"></svg>
+    <p align="right"><small>[<a href="LiftCurve.html" target="_lift">view in separate window</a>]</small></p>
+    <script src="LiftCurve.js" type="text/javascript" charset="utf-8"></script>    
+
+    <p>Luckily, we <strong>do</strong> have more information, so we <strong>can</strong> do better! For example, hover
+      over data point (20.0, 63.2) on the upper KNN line. This data point means that by merely selecting the top-ranked
+      <strong>one fifth</strong> of our customers, we can expect to hit no less than <strong>two thirds</strong> of all customers
+      who would actually buy the product!</p>
+    <p>Each table that appears when hovering over the data points also mentions <strong>cumulative lift</strong>.
+      This measure is simply defined as the ratio of the y over the x value in that point.
+      For the example data point at (20.0, 63.2), lift is equal to the trained model yield (63.2 percent)
+      divided by the (theoretical) baseline yield at the same x value, so lift is 63.2 / 20.0 = 3.16. In the steep left parts
+      of the trained model curves, cumulative lift rises sharply. On the KNN curve, it reaches its maximum value (4.13) at x=13.0.
+    </p>
+
+    <p>So based on the lift graph alone, the bank could decide to <strong><u>contact its 13% top-ranked customers, and then stop</u></strong>.</p>
+
+    <p>Alternatively, it could also decide to only stop contacting customers when the <strong>local lift</strong> (i.e. the lift in
+      the percentile immediately preceding the point) starts dropping below 1, i.e. performing worse than the (theoretical) baseline.
+      On the KNN curve, local lift fluctuates around 1 in the x interval [19.0-32.0], so this is not such a clear-cut decision.</p>
+    
+    <p>Now, despite all these niceties, there's still one ingredient missing: <strong>money</strong>!</p>
+
+    <h2>Profit curve: knowing when to stop the campaign</h2>
+
+    <p>Each customer contact costs money, but also carries a potential reward in the form of future revenue.
+      Let's bring in two new variables:</p>
+
+    <ul>
+      <li>the <strong>average cost per contact</strong>. This cost is incurred irrespective of whether the 
+	contact leads to a sale or not.</li>
+      <li>the <strong>average revenue per <em>successful</em> contact</strong>. An unsuccesful contact brings
+	in zero revenue, by definition.</li>
+    </ul>
+
+    <p>Even though we have to limit ourselves to averages, these variables do allow us to improve on our rather abstract lift curve.
+      The default <strong>profit curve</strong> below assumes that each contact (successful or not) costs $10 on average,
+      while the average <em>successful</em> one carries $50 in revenue.
+      </p>
+
+    <p>In this default configuration, the KNN profit curve maxes out at x=14, bringing in $6840 of cumulative profit.
+      Compare this to the cumulative loss of $2410 in case we would just contact customers in random order.
+      As a matter of fact, the current cost/revenue configuration would constantly write in the red in the baseline case.</p>
+
+    <div id="containerForSlidersAndProfitCurve" style="border-style:solid; border-width:1px; border-color:black; padding:25px 5px 5px 0px">
+
+    <div id="containerFor2Sliders" style="height:100; padding-left:10px;">
+    
+      <div style="clear:both;">
+      <div style="float:left;">&nbsp;&nbsp;avg. cost per customer contact (USD):</div>
+      <span style="margin-left: 10px; margin-top: -20px; width:30%; float:left; margin-bottom:0px;" id="avgCostPerContactSlider"></span>
+      <div style="margin-left: 10px; margin-top: 0px; float:left;"><strong id="avgCostPerContactSliderText">10</strong></div>
+      </div>
+
+      <div style="clear:both;">
+      <div style="float:left;">avg. revenue per successful sale (USD):</div>
+      <span style="margin-left: 2px; margin-top:-20px; width:60%; float:left;" id="avgRevenuePerContactSlider"></span>
+      <div style="margin-left: 10px; margin-top:0px; float:left"><strong id="avgRevenuePerContactSliderText">50</strong></div>
+      </div>
+
+    </div><!-- containerFor2Sliders -->
+
+    <svg id="profitcurve" style="clear:both; height:400px; width:100%;"></svg>
+    <script src="calcProfit.js" type="text/javascript" charset="utf-8"></script>
+    <script src="ProfitCurve.js" type="text/javascript" charset="utf-8"></script>
+
+    </div><!-- containerForSlidersAndProfitCurve -->
+    <p align="right"><small>[<a href="ProfitCurve.html" target="_profit">view in separate window</a>]</small></p>
+
+    <p>Now increase the average revenue per successful contact to $90, using the second slider
+      on top of the graph above, and watch attentively. By increasing the profit per successful contact to 
+      <span style="white-space:nowrap">$90-$10=$80</span>, the shape of the profit curve
+      has taken a different form. Cumulative profit now tops at $17.530, but to get there we have to contact 20&#37; 
+      of all customers. Also, if we were to contact <em>all</em> (100&#37;) customers, we would more or less break even, with
+      a cumulative loss of only $330.</p>
+
+    <p>Finally, increase both sliders with $10, so their respective values become $20 and $100. While this has no effect
+      on the profit per successful contact <span style="white-space:nowrap">($100-$20 = $80 = $90-$10)</span>, the loss per
+      <em>failed</em> contact has <em>doubled</em> from $10 to $20. As a result, the trained model profit curves now cross
+      the breakeven line again (around x=40&#37;), while the baseline curve goes permanently in the red again.</p>
+
+    <p>The bottom line is that any specific configuration of cost and revenue greatly influences the shape of the curves,
+      the profitability intervals, and therefore the decision boundaries.</p>
+
+    <h2>Profit heat map: impressionistic view on individual and cumulative profit contributions</h2>
+
+    <p>How much does each <em>individual</em> customer contribute to cumulative profit? In the heatmap below, each cell
+      represents one customer from the test set. Customers are displayed in the ranking order defined by the model, with
+      the most probable buyer first. Reading order is  left-to-right, top-down - the same as for written English.</p>
+
+    <p>In the baseline case, with default cost and revenue values, the heatmap progressively takes on deeper shades of red.
+      Since the baseline lists customers in random order, there are more negative than positive contributions,
+      no matter which region of the heatmap we look at. This is aptly demonstrated if you select
+      profit: &quot;contribution per individual customer&quot;.</p>
+
+    <div id="containerForControlsAndProfitHeatMap" style="width:840px; border-style:solid; border-width:1px; border-color:black; padding:5px 5px 5px 10px">
+
+      <div id="DropDownBoxes" style="height:20px;">
+	<span style="float:left; padding-left:10px; valign:middle padding-top:5px">Model</span>
+	<select id="model" style="float:left; margin-left:20px;">
+	  <option value="baseline" selected="selected">Baseline</option>
+	  <option value="knn">KNN</option>
+	  <option value="logres">Logistic Regression</option>
+	  <option value="gaussianNB">Gaussian Naive Bayes</option>
+	</select>
+	<span style="float:left; margin-left:20px; padding-left:10px; valign:middle padding-top:5px">Profit</span>
+	<select id="profittype" style="float:left; margin-left:10px;">
+	  <option value="cumulative" selected="selected">Cumulative: includes contributions by higher-ranked customers</option>
+	  <option value="single">Contribution per individual customer</option>
+	</select>
+      </div>
+      
+      <div id="containerFor2Sliders4Heatmap" style="clear:both; height:110; padding-left:10px; padding-top:30px;">
+    
+	<div style="clear:both;">
+	  <div style="float:left;">&nbsp;&nbsp;avg. cost per customer contact (USD):</div>
+	  <span style="margin-left: 10px; margin-top: -20px; width:30%; float:left; margin-bottom:0px;" id="avgCostPerContactSliderForHeatmap"></span>
+	  <div style="margin-left: 10px; float:left;"><strong id="avgCostPerContactSliderForHeatmapText">10</strong></div>
+	</div>
+	
+	<div style="clear:both; margin-top:30px;">
+	  <div style="float:left;">avg. revenue per successful sale (USD):</div>
+	  <span style="margin-left: 2px; margin-top:-20px; width:60%; float:left;" id="avgRevenuePerContactSliderForHeatmap"></span>
+	  <div style="margin-left: 10px; float:left"><strong id="avgRevenuePerContactSliderForHeatmapText">50</strong></div>
+	</div>
+	
+      </div><!-- containerFor2Sliders4Heatmap -->
+
+      <div id="profitheatmap" style="clear:both; width:830px;"></div>
+      <script src="ProfitHeatMap.js"></script>
+      
+      <div id="heatmaptooltip" class="hidden">
+        <p><span id="value"/></p>
+      </div>
+
+    </div><!-- containerForControlsAndProfitHeatMap -->
+
+    <p align="right" style="width:840px;"><small>[<a href="ProfitHeatmap.html" target="_profitheatmap">view in separate window</a>]</small></p>
+
+    <p>Now select a non-baseline model, and see how the random distribution of individual positive profit contributions
+    transforms into a more ordered view: the positive profit contributions are indeed pushed towards the beginning
+      (top-left corner) of the heatmap. This is the power of the learned models at work.</p>
+
+    <p>Finally, also select different configurations of the cost and revenue parameters, and see how this influences the heatmap.
+    For example, try the baseline model with cost 10 and revenue 90, as we did in the profit curve before. This configuration
+      confirms that the cumulative profit remains near the break-even line.</p>
+
+    <h2>Recommendations</h2>
+
+    <p>Customers must be targeted in descending order of their probability to buy the product. Running the trained models on
+      unseen customer data will provide such a ranking.</p>
+
+    <p>To enable an informed decision about when to halt the campaign, the bank must first provide information on cost and revenue
+      per (successful) contact.
+      <ul>
+	<li>Without such information, we advise to stop when maximum cumulative lift is achieved,
+	  or when we have run out of budget, whichever comes first.</li>
+	<li>If we do have such information, we advise to stop when maximum profit is achieved,
+	  or when we have run out of budget, whichever comes first.</li>
+      </ul>
+    </p>
+
+    <p>Having set the cost and revenue variables, define the optimization criterion (e.g. maximum cumulative profit).
+      Then consult the profit curve and heatmap to identify which and how many customers to contact, most probable
+      buyers first.</p>
+
+    <h2>Additional resources</h2>
+
+    <ul>
+      <li>Foster Provost &amp; Tom Fawcett: <a href="http://shop.oreilly.com/product/0636920028918.do" target="_blank">Data Science for Business. What you need to know about data mining and data-analytic thinking</a>. O'Reilly, 2013.<br/>Chapter 8: &quot;Visualizing Model Performance&quot; introduces the ROC, Lift and Profit curves.</li>
+      <li><a href="http://nvd3.org" target="_blank">NVD3. Re-usable charts for D3.js</a></li>
+      <li><a href="https://github.com/sujeetsr/d3.slider" target="_blank">D3.slider</a></li>
+      <li><a href="http://bl.ocks.org/ianyfchang/8119685" target="_blank">Heatmap example</a></li>
+    </ul>
+
+  </body>
+</html>
