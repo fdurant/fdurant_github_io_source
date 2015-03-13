@@ -7,7 +7,7 @@ excerpt:
 tags: ["nlp", "topic modelling", "microfinance", "loans", "development", "kiva", "d3", "visualization"]
 image:
   feature:
-date: 2015-03-12T19:00:00-00:00
+date: 2015-03-13T12:00:00-00:00
 share: true
 ---
 
