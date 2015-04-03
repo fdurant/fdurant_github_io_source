@@ -1,0 +1,79 @@
+#heading {
+  margin-left: 20px;
+  height: 20px;
+  width: 95%;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px;
+}
+
+.header {
+  float: left;
+  width:24.5%;
+  height:15px;
+  border-style: solid;
+  border-color: red;
+  border-width: 0px;
+}
+
+#lending_country {
+  text-align: center;
+}
+
+#borrowing_country {
+  text-align: center;
+}
+
+#borrowing_region {
+  float: right;
+  text-align: right;
+}
+
+#loanFlowChart { 
+  margin-left: 20px;
+  height: 1500px;
+  width: 95%;
+}
+
+g {
+	height: 100%;
+	width: 100%;	
+}
+
+.node rect {
+  fill-opacity: .4;
+  shape-rendering: crispEdges;
+}
+
+.node.clickable {
+  cursor: pointer;	
+}
+
+.node.clickable:hover rect {
+  fill-opacity: 0.9;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 0.6em;
+}
+
+.link {
+  fill: none;
+  stroke-opacity: .3;
+}
+
+.link.clickable {
+  cursor: pointer;	
+}
+
+.link.clickable:hover {
+  stroke-opacity: .5;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

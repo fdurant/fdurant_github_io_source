@@ -1,0 +1,202 @@
+<html>
+  <head>
+  <title>Project: an end-to-end loan funding predictor for kiva.org</title>
+  <!--script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script-->
+  <!--script src="http://d3js.org/d3.v3.js" charset="utf-8"></script-->
+  <!--script src="nv.d3.min.js" charset="utf-8"></script)-->
+
+  <script src="d3.v3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="career_center.css" />
+  <link rel="stylesheet" type="text/css" href="visualizer.css" />
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jquery.lettering-0.6.1.min.js"></script>
+  <script type="text/javascript" src="career_center.js"></script>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <script src="sankey.js" charset="utf-8"></script>
+  <script src="loanflow_visualizer.js" charset="utf-8"></script>
+
+  </head>
+
+  <body>
+    <h2>Abstract</h2>
+
+    <h2>Introduction</h2>
+
+    <p>My <a href="/projects/kiva-topic-modelling-project/"
+      target="_">previous blog post</a> offered a high-level glance  
+      into the loan descriptions at <a href="http://kiva.org/" target="_">kiva.org</a>.
+      For my final project at
+      the <a href="http://www.thisismetis.com/data-science"
+      target="_">Metis Data Science Bootcamp</a>, 
+      I delved a bit deeper in the mechanics of micro-finance at Kiva,
+      looking for a practical problem to solve, that could be demoed
+      as part of a useful tool.
+      Existing <a href="#kiva_research">Kiva research papers</a>
+      study for example how images of Kiva borrowers
+      influence loan decisions by lenders <a href="#jenq_pan_theseira">[1]</a>,
+      or which factors motivate
+      existing lenders to make additional
+      loans <a href="#Choo_Lee_Lee_Zha_Park">[2]</a>.
+    </p>
+
+    <h3>The micro-finance process at Kiva.org</h3>
+
+    <p>
+      The abovementioned paper <a href="#Choo_Lee_Lee_Zha_Park">[2]</a> contains a clear overview of
+      the <a href="http://www.kiva.org/about/how/even-more"
+      target="_">Kiva loan process</a>. It is repeated below, but with
+      a couple of additions (two ovals and one curved arrow) by me:
+      <ul>
+	<li>Field partners actually <b>pre-disburse</b> loans to
+	borrowers <b>before</b> they are published to Kiva lenders
+	on the website. This obviously involves a certain risk</li>
+	<li>When one or more lenders approve a loan, they actually <b>back-fill a
+	pre-disbursed loan</b>. Only then does the loan default <b>risk
+	move from the field partner to the lenders</b></li>
+      </ul>
+    </p>
+
+    <p style="margin-top:20px; margin-bottom:20px;">
+      <img src="/images/kiva_loan_process.png" style="border-width:0px;border-style:solid;"/>
+    </p>
+
+    <p>The crucial point, now, is <b>whether enough lenders will be
+    found within a loan request's expiration time to fully fund,
+    i.e. back-fill the loan</b>. When a loan is not completely funded
+    in time, the allocated amounts return to the Kiva lenders, and the full
+    risk will stay with the field partner.</p>
+
+    <p>Getting loans fully funded is in the interest of the following
+    parties:
+      <ul>
+	<li>Even though <b>field partners</b> must have some capital of their own,
+	they want to limit their overall risk by having the worldwide
+	Kiva lender community mmaximally back-fill the pre-disbursed loans</li>
+	<li>Kiva <b>lenders</b> - who are benevolent by definition - want to
+	see their allocated money be put to use, rather than stay
+	dormant in the system</li>
+	<li><b>Borrowers</b> will have an easier time getting loans
+	pre-disbursed as the fields partners are more confident that
+	they will be backfilled in time</li>
+      </ul>
+    </p>
+
+    <p><b>Efficient loan funding is therefore beneficial to the Kiva
+    ecosystem as a whole</b>. This is especially true in times when the total amount of
+    loan requests is larger that the available money in the system.
+    Kiva loans being interest free, there is no other built-in
+    mechanism for steering offer and demand, than trust, benevolence
+    - and PR.</p>
+
+    <h3>The downside of Kiva's growth: non-backfilled loans</h3>
+
+    <p>Kiva has been a phenomenal success. Since its foudation in
+    2005, the number of loan requests has risen year over year. In the
+    early years, there seems to have been enough available money in the
+    system to fully backfill most, if not all loan requests. <b>Since 2012, however, this
+    has not been the case anymore</b>, as illustrated by the graph below.</p>
+
+    <p style="margin-top:20px; margin-bottom:20px;">
+      <img src="/images/nr_loans_per_quarter.png"/>
+    </p>
+
+    <p>If there has indeed been a lack of fresh Kiva lender capital flowing
+      in since 2012, it is unclear to what extent and how soon this
+      has translated into a growing refusal of
+      loan requests by the field partners to predisburse loans in the
+      first place: this information is not known to us. But from the
+      field partners' perspective, there must
+      be a limit to their ability to keep on increasing their
+      own capital and/or incurring more risk, without an effect on <em>valid</em>
+      borrowers' loan requests.</p>
+
+    <p>Especially male borrowers are lagging behind. Not
+    only have they historically entered the Kiva system less
+    frequently than females; 
+    but as soon as money supply could not cope anymore with demand,
+    loans to male borrowers have had a harder time getting backfilled
+    than loans predisbursed to females.</p>
+
+    <p>For all these reasons, it is at least desirable that the <b>available money</b>
+    inside the Kiva ecosystem <b>flows as efficiently as possible</b>.</p>
+
+    <h3>Kiva micro-finance is big!</h3>
+
+    <p>As a final introductory note, let's see <a href="sankey.html" target="_">how money
+    flows through the global Kiva ecosystem</a>. The interactive graph below summarizes the
+      cumulative money flows for the period 2012 through 2014, between
+    countries (middle columns). The left and right column do not
+    really represent money flows, but group the countries by region,
+    respectively from the lenders' and the borrowers' perspective.</p>
+      
+    <p>
+    All figures were calculated from
+    a <a href="http://build.kiva.org/" target="_">Kiva JSON data
+    snapshot</a> downloaded on February 17, 2015.</p> 
+
+    <div id="sankey_container" style="margin-top:20px; margin-bottom:20px; border-width:0px;border-style:solid;border-color:black;">
+
+    <h4 style="margin-top:20px; margin-bottom:20px;"
+    align="center">Kiva microloans, grouped per region and country
+    (2012-2014, combined)</h4>
+
+    <div id="heading">
+      <div class="header" id="lending_region">Lending Regions</div>
+      <div class="header" id="lending_country">Lending Countries</div>
+      <div class="header" id="borrowing_country">Borrowing Countries</div>
+      <div class="header" id="borrowing_region">Borrowing Regions</div>
+    </div>
+    <div id="loanFlowChart"></div>
+    <p style="float:left; text-align:left;"><small>[This <a href="http://d3js.org/"
+    target="_blank">D3</a> <a href="http://bost.ocks.org/mike/sankey/"
+    target="_blank">Sankey Diagram</a> is inspired
+    by <a href="https://apps.carleton.edu/career/visualize/"
+    target="_blank">Carleton College Career Path]</a></small></p>
+
+    <p style="float:right; text-align:right;"><small>[<a href="sankey.html"
+    target="_blank">Open in separate window</a>]</small></p>
+
+    </div><!-- sankey_container -->
+
+    <h2>Problem description</h2>
+
+    <h2>Building the predictor</h2>
+
+    <h3>Data preperation</h3>
+
+    <p>Show example of JSON loan</p>
+
+    <h3>Feature selection</h3>
+
+    <p>Loans, topic info on loan descriptions, partners</p>
+
+    <h3>Training and evaluation</h3>
+
+    <h3>Incremental feature contribution to model performance</h3>
+
+    <h2>Live deployment of the predictor</h2>
+
+    <p>Pickle</p>
+    <p>Flask REST container</p>
+    <p>GitHub</p>
+
+    <h2>End-to-end integration via Google Chrome plugin</h2>
+
+    <h2>Technologies used</h2>
+
+    <h2>References</h2>
+
+    <h3><a name="kiva_research">Research papers on Kiva</a></h3>
+
+    <p>
+      <ul>
+	<li>[<a name="#jenq">1</a>] Christina Jenq, Jessica Pan and Walter Theseira: <a href="http://riped.utcc.ac.th/wp-content/uploads/2012/03/Dr_Jessica_Pan_30_March_2012.pdf" target="_">What Do Donors Discriminate On? Evidence from Kiva.org</a></li>
+	<li>[<a name="Choo_Lee_Lee_Zha_Park">2</a>]Jaegul Choo,
+	Changhyun Lee, Daniel Lee, Hongyuan Zha and Haesun Park:
+	<a href="http://www.cc.gatech.edu/~joyfull/resources/2014_wsdm_kiva.pdf"
+	target="_">Understanding and Promoting Micro-Finance Activities in Kiva.org</a></li>
+      </ul>
+    </p>
+
+  </body>
+</html>
