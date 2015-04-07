@@ -112,7 +112,7 @@
 
     <figure>
       <img src="/images/nr_loans_per_quarter.png" style="margin-top:20px; margin-bottom:20px;"/>
-      <figcaption>Per-quarter histogram of loan requests in period 2006-2014</figcaption>
+      <figcaption>Per-quarter bar chart of loan requests in period 2006-2014</figcaption>
     </figure>
 
     <p>The rising number of non-backfilled loans since 2012 may be due to the
@@ -150,7 +150,7 @@
     <a href="http://en.wikipedia.org/wiki/Sankey_diagram" target="_">Sankey diagram</a>
     below summarizes, for the period 2012 through 2014, the
     money flows between lenders and borrowers. In these three years,
-    about <b>325 million dollars</b> have been lent &mdash; and the
+    more than <b>321 million dollars</b> have been lent &mdash; and then
     (hopefully) repaid.</p>
     <p> The connections in the center &quot;column&quot; shows the
     country-to-country money flows. The left and right column do not
@@ -302,8 +302,8 @@
       <tr>
 	<td><a href="http://matplotlib.org" target="_">Matplotlib</a></td>
 	<td>Plotting data</td>
-	<td>Producing the loan histograms, split per gender and
-	quarter (see above), and other graphs</td>
+	<td>Producing the loan bar chart, split per gender and
+	quarter (see above), and feature polarity graphs (see below)</td>
       </tr>
       <tr>
 	<td><a href="https://radimrehurek.com/gensim/" target="_">gensim</a></td>
@@ -525,9 +525,11 @@
       </ul>
     </p>
 
-    <p>Also interesting is the direction in which each feature
-    influences a positive prediction. Let's look successively at the
-    &quot;PostedMonth&quot; features, the topic features, and the other ones.</p>
+    <p>Also of interest is the feature polarity, i.e. whether a feature
+    influences a positive prediction (= full funding) in the positive
+    or negative sense. Let's look successively at the 
+    &quot;PostedMonth&quot; features, the topic features, and all the
+    other ones.</p>
 
     <h3>What is the optimal time of year to post a loan?</h3>
 
