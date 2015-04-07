@@ -32,29 +32,33 @@
       have studied for example how images of Kiva borrowers
       influence loan decisions by lenders <a href="#jenq_pan_theseira">[1]</a>,
       or which factors motivate
-      existing lenders to make additional
+      lenders to make additional
       loans <a href="#Choo_Lee_Lee_Zha_Park">[2]</a>. My high-level
-      aim was double: produce some <b>new insights</b>, and build
-      something <b>ready to use and demo</b>, all in the course of
+      aim in this project was double: produce <b>new insights</b>, and, above all, build
+      something <b>ready to use and demo</b> &mdash; all in the course of
       four weeks.
     </p>
+
+    <p>Let's start by setting the stage.</p>
 
     <h3>The micro-finance process at Kiva.org</h3>
 
     <p>
       The abovementioned paper <a href="#Choo_Lee_Lee_Zha_Park">[2]</a> contains a clear overview of
       the <a href="http://www.kiva.org/about/how/even-more"
-      target="_">Kiva loan process</a>. It is repeated below, but with
+      target="_">Kiva loan process</a>. It is repeated here below, but with
       a couple of additions (two ovals and one curved arrow) to point
       out some particulars that drew my attention:</p>
 
     
       <ul>
-	<li>Field partners actually <b>predisburse</b> loans to
-	borrowers <b>before</b> they are published to Kiva lenders
-	on the website. This obviously involves a certain risk.</li>
-	<li>When one or more lenders approve a loan, they actually <b>back-fill a
-	predisbursed loan</b>. Only then does the loan default <b>risk
+	<li>Field partners actually <b>pre</b>disburse loans to
+	borrowers <b>before</b> they are published to lenders
+	on the Kiva website. This obviously involves a certain risk.</li>
+	<li>So, when (typically an ad hoc group of) lenders allocate their money to a
+	loan, they are actually <b>back-filling a 
+	predisbursed loan</b>. Only when a loan is fully backfilled
+	does the loan default <b>risk 
 	move from the field partner to the lenders</b>.</li>
       </ul>
       
@@ -64,13 +68,13 @@
 	(adapted from [<a href="#Choo_Lee_Lee_Zha_Park">2</a>])</figcaption>
       </figure>
 
-    <p>The crucial point, now, is <b>whether enough lenders will be
-    found within a loan request's expiration time to back-fill the
-    loan</b>.
+    <p>The crucial point, of course, is whether <b>enough</b> lenders will be
+    found <b>within a loan request's expiration time</b> to back-fill the
+    loan.
       When a loan is not completely funded
     in time, the allocated amounts return to the Kiva lenders, and the full
     risk stays with the field partner. The predisbursed loan itself,
-    of course, remains: the borrower already received the money, and is expected to
+    however, remains: the borrower already received the money, and is expected to
     pay it back over time.</p>
 
     <p>Getting loans fully funded is in the interest of multiple
@@ -80,7 +84,7 @@
 	they want to limit their overall risk by having the worldwide
 	Kiva lender community maximally back-fill the predisbursed loans.</li>
 	<li>Kiva <b>lenders</b> &mdash; who are benevolent by definition &mdash; want to
-	see their allocated money be put to use, rather than stay
+	see their available capital used, rather than stay
 	dormant in the system.</li>
 	<li><b>Borrowers</b> will have an easier time getting loans
 	predisbursed as the fields partners are more confident that
@@ -90,7 +94,9 @@
 
     <p><b>Efficient loan funding is therefore beneficial to the Kiva
     ecosystem as a whole</b>. This is especially true in times when the total amount of
-    loan requests exceeds the available money in the system.
+    loan requests exceeds the available money in the system.</p>
+
+    <p>By the way,
     Kiva loans being interest free, there is no other built-in
     mechanism for steering offer and demand, than trust, benevolence
     and advertizing &mdash;  whether by word of mouth or otherwise.</p>
@@ -98,11 +104,11 @@
     <h3>The downside of Kiva's growth: non-backfilled loans</h3>
 
     <p>In terms of growth, Kiva has been a phenomenal success. Since
-    its start in 2005, the number of loan requests has risen year over year. In the
+    its start in 2005, the number of loan requests has risen year after year. In the
     early years, there seems to have been enough available money in the
-    system to fully backfill most, if not all loan requests. However, since
+    system to fully backfill most, if not all loan requests. However, <b>since
     2012, a significant number of predisbursed loans do not get
-    backfilled, as is illustrated below.</p>
+    backfilled</b>, as is illustrated below.</p>
 
     <figure>
       <img src="/images/nr_loans_per_quarter.png" style="margin-top:20px; margin-bottom:20px;"/>
@@ -110,7 +116,7 @@
     </figure>
 
     <p>The rising number of non-backfilled loans since 2012 may be due to the
-    relative lack of fresh inflowing capital from Kiva lenders, or to
+    relative lack of fresh inflowing capital from Kiva lenders, and/or to
     an intrinsic deterioration of loan quality. Whichever the reason,
     it is unknown if, to what extent and how soon the rising proportion of
     non-backfilled loans has translated into a growing refusal of
@@ -119,8 +125,9 @@
     hypotheses. But from the 
       field partners' perspective, <b>there must
       be an inherent limit to increase their
-      own capital and incur more risk</b>. The transgression of this limit must
-      eventually <b>negatively influence the (invisible) predisbursal rate of initial loan
+      own capital and incur more risk</b>. In a system with acceptable
+    risk-taking, any transgression of this limit must
+      eventually <b>hamper the (invisible) predisbursal rate of initial loan
       requests, <em>including valid ones</em></b>.</p>
 
     <p>Especially male borrowers are lagging behind. Not
@@ -132,22 +139,31 @@
     than loans predisbursed to females.</p>
 
     <p><b>Irrespective of the amount of money present in the
-    Kiva ecosystem at any moment, we should at least try to make these funds flow as efficiently as possible</b>.</p>
+    Kiva ecosystem at any moment, we should at least try to make the
+    available funds flow as efficiently as possible</b>.</p> 
 
     <h3>Kiva micro-finance is big</h3>
 
-    <p>As a final introductory note, let's see <a href="sankey.html" target="_">how money
-    flows through the global Kiva ecosystem</a>. The interactive graph
+    <p>As a final introductory note, let's
+    visualize <a href="sankey.html" target="_">how money 
+    flows through the global Kiva ecosystem</a>. The interactive
+    <a href="http://en.wikipedia.org/wiki/Sankey_diagram" target="_">Sankey diagram</a>
     below summarizes, for the period 2012 through 2014, the
-    money flows between lenders and borrowers, each grouped by
-    country (middle column). The left and right column do not
-    really represent money flows, but group the countries by region,
+    money flows between lenders and borrowers. In these three years,
+    about <b>325 million dollars</b> have been lent &mdash; and the
+    (hopefully) repaid.</p>
+    <p> The connections in the center &quot;column&quot; shows the
+    country-to-country money flows. The left and right column do not
+    really represent flows; they rather group the countries by region,
     respectively from the lenders' and the borrowers' perspective.</p>
+
+    <p>To see the dollar amounts, simply hover with the mouse over the
+    graph. After a second or two, a popup will appear.</p>
       
     <div id="sankey_container" style="margin-top:20px; margin-bottom:40px; border-width:0px;border-style:solid;border-color:black;">
 
     <h4 style="margin-top:20px; margin-bottom:20px;"
-    align="center">Kiva microloans, grouped per region and country
+    align="center">Kiva microloans, grouped per region and country<br/>
     (2012-2014, combined)</h4>
 
     <div id="heading">
@@ -169,9 +185,12 @@
     </div><!-- sankey_container -->
 
     <p style="clear:both">
-    All figures were calculated from
+    All figures are calculated from
     a <a href="http://build.kiva.org/" target="_">Kiva JSON data
-    snapshot</a> downloaded on February 17, 2015.</p> 
+    snapshot</a> downloaded on February 17, 2015. The software code
+    is available on <a href="https://github.com/fdurant/kiva_project/tree/master/d3" target="_">GitHub</a>.</p> 
+
+    <p>Now that the stage is set, let's define our problem more precisely.</p>
 
     <h2>Business goal: optimal money flow, by predicting the funding
     of new loan requests</h2>
@@ -179,58 +198,60 @@
     <p>
     The <b>business goal</b> in this project is to <b>reduce the amount of
     non-productive, sleeping
-    money in the system</b>. The main observation is that <b>it is
+    money in the system</b>.</p>
+
+    <p>The main observation is that <b>it is
     better for X% of loans to be 100% funded, than for 100% of loans
-    to be funded at X% each.</b> In the latter case, following Kiva policy, all funds simply
-    return to the lenders, which means that not a single loan would be backfilled!</p>
+    to be funded at X% each.</b> In the latter (granted, somewhat
+    extreme) case, following Kiva policy, all funds would simply
+    return to the lenders. This means that not a single loan would be backfilled!</p>
 
     <p>
     To reach this business goal, I propose a tool that
     provides an <b>a priori insight into the chance of a loan request
     being fully funded</b> by available Kiva lender money. Next to
-    that, this study aims to uncover certain actionable insights too.</p>
-
-    <p>
-    Having this information at hand is potentially useful to different parties:
+    that, this study aims to uncover <b>actionable insights</b> to the
+    concerned parties, who may benefit as follows:</p>
 
     <ul>
-      <li>Field partners and borrowers can work together to adapt certain
-	characteristics of a loan request in order to increase its
+      <li>Field partners and borrowers can work together to <b>adapt certain
+	characteristics of a loan request</b> in order to increase its
 	chance of being funded.</li>
-      <li>Field partners and/or the Kiva platform can promote certain
-      loan requests over others, in the interest of system
+      <li>Field partners and/or the Kiva platform can <b>promote certain
+      loan requests</b>, in the interest of system
       efficiency. This way they can avoid or mitigate the &quot;many
       loans <em>almost</em> funded&quot; trap.</li>
       <li>Lenders may want to know up-front if their money is going
-      to fund a &quot;winning&quot; loan request, and adapt their
+      to <b>fund a &quot;winning&quot; loan request</b>, and adapt their
       decisions accordingly.</li>
     </ul>
 
     </p>
 
       <p><b>Disclaimer</b>:
-    I am fully aware that each of these uses are possibly
-    controversial. They might indeed carry unintended
+    I am fully aware that each of these uses are <b>possibly
+    controversial</b>. They might indeed carry unintended
     side-effects, such as information asymmetry, perceived or real
     favoritism, and, in the worst case, intentional misrepresentation of
     loan characteristics. Since trust and transparancy are key values for Kiva
     &mdash; or any other finance system, for that matter &mdash;
-    any potential deployment should only happen after careful
-    consideration of the risks and benefits involved. In the framework
+    any potential deployment into a global production setting should only happen after careful
+    analysis of the risks and benefits involved. <b>In the framework
     of this 4-week final
-    project, I make no further statements about this important question. For the record:
-    Kiva.org was not informed about this study project before it was
-    completed, and published here.</p>
+    project, I make no further statements about this important
+    question</b>. By the way, and for the record:
+    Kiva.org was not informed about this project before it was
+    completed and published here.</p>
 
     <h3>Solution architecture</h3>
 
-    <p>The technical solution consists of 4 main components:
+    <p>My technical solution consists of 4 main components:
       <ul>
 	<li>Web services offered by <a href="http://kiva.org/" target="_">kiva.org</a>,
 	for <a href="http://build.kiva.org/" target="_">offline</a> and <a href="http://build.kiva.org/api" target="_">online</a> data retrieval</li>
 	<li>An offline process for training and evaluating the predictor</li>
 	<li>A live predictor, deployed in the cloud</li>
-	<li>A web browser (Google Chrome) with a self-developed plugin that virtually integrates all
+	<li>A web browser (Google Chrome) with a self-developed extension that virtually integrates all
 	solution elements</li>
       </ul>
     </p>
@@ -242,9 +263,9 @@
       predictor solution</figcaption>
     </figure>
 
-    <p>Each component is now briefly described, following
-    the steps (1-6) in which it was obtained. This description is somewhat
-    idealistic, in that the actual R&amp;D process was of a more
+    <p>I now elaborate on each component, following
+    the steps (1-6) in which they come into play. This description is somewhat
+    idealistic, in that the real-life R&amp;D process was more of a
     agile and iterative nature.</p>
 
     <p>All code is available
@@ -269,7 +290,8 @@
       <tr>
 	<td><a href="https://github.com/saffsd/langid.py" target="_">langid.py</a></td>
 	<td>Language identification of Kiva loan descriptions</td>
-	<td>Correcting erroneous language identification by Kiva</td>
+	<td>Correcting erroneous language identification by Kiva, due
+	to mixed original versions and their translations</td>
       </tr>
       <tr>
 	<td><a href="http://pandas.pydata.org" target="_">Pandas</a>
@@ -280,7 +302,8 @@
       <tr>
 	<td><a href="http://matplotlib.org" target="_">Matplotlib</a></td>
 	<td>Plotting data</td>
-	<td>Producing the loan histograms, split per gender and quarter</td>
+	<td>Producing the loan histograms, split per gender and
+	quarter (see above), and other graphs</td>
       </tr>
       <tr>
 	<td><a href="https://radimrehurek.com/gensim/" target="_">gensim</a></td>
@@ -300,7 +323,7 @@
     <p>In preparation of a previous project, I had already downloaded
     a Kiva snapshot of approximately 775.000 loans and their
     respective lenders on February 17,
-    2015. The same data were reused in this project.</p>
+    2015. The data are reused in this project.</p>
 
     <h2>Step 2: Predictor/classifier training and evaluation</h2>
 
@@ -312,7 +335,7 @@
       </tr>
       <tr>
 	<td><a href="http://scikit-learn.org/" target="_">Scikit-learn</a></td>
-	<td>Training a logistic regression model</td>
+	<td>Training and evaluating a logistic regression model</td>
 	<td>Producing predictions and (rankable) prediction scores
 	between 0-1</td>
       </tr>
@@ -326,21 +349,21 @@
     <h3>Feature creation</h3>
 
     <p>
-      Three types of input features were extracted from the JSON snapshot:
+      Three types of input features were extracted and/or derived from the JSON snapshot:
       <ul>
 	<li>19 <b>loan features</b> extracted from
 	the <a href="http://api.kivaws.org/v1/loans/844974.json"
 	target="_">JSON representation</a> of a <a href="http://www.kiva.org/lend/844974" target="_">Kiva loan</a></li>
 	<li>20 <b>topic model features</b> inferred for each loan
-	from a separately trained Supervised Latent Dirichlet
-	Allocation model</li>
+	from a Supervised Latent Dirichlet
+	Allocation model that I created on the side</li>
 	<li>4 <b>partner features</b> extracted from the <a href="http://api.kivaws.org/v1/partners.json" target="_">JSON
 	representation</a> of
 	the <a href="http://api.kivaws.org/v1/partners.html" target="_">Kiva partner list</a></li>
       </ul>
     </p>
 
-    <p>The to-be-predicted label was defined by dividing the actual
+    <p>The to-be-predicted label is defined as follows: divide the actual
     &quot;funded_amount&quot; by the requested &quot;loan_amount&quot;. If this
     ratio is greater than or equal to 1, the loan is fully funded
     (<b>label 1</b>). If not, the loan is not fully funded (<b>label 0</b>).
@@ -348,8 +371,10 @@
     </p>
 
     <p>The data set consists of <b>all</b> usable loans from the years 2012
-    through 2014: <b>21.212 negative and 419.913 positive</b>
-    instances. This a priori 20/1 ratio calls for careful class weight settings during
+    through 2014: <b>21 K negative and 420 K positive</b>
+    instances. This a priori 20/1 ratio calls for
+    careful <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+    target="_">class weight settings</a> during 
       model training.</p>
 
     <h3>Model training</h3>
@@ -358,9 +383,9 @@
     a <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
     target="_">logistic regression</a> model 
     against the training data, using 10-fold cross validation. The
-    chosen class weight setting was 'auto', which should compensate
-    for the imbalance in the training set in terms of positive vs. negative
-    labels. I also included
+    chosen <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+    target="_">class weight setting is 'auto'</a>, which should compensate
+    for the strong predicted label imbalance in the training set. I also included
     some experimentation with varying regularization parameters. Since
     my prime goal in this project is to <b>deliver an end-to-end
     system, rather than
@@ -389,10 +414,10 @@
     as the
     &quot;constant&quot; feature group for the next round. There, it
     was on its turn combined with
-    each of the remaining feature groups; again, the winner was
+    each of the remaining feature groups; again, a winner was
     selected and added to the ranked list of feature groups. The
-    end result of this iterative process is the following feature group ranking,
-    in descending order of marginal contribution:</p> 
+    end result of this iterative process is the following <b>feature group ranking</b>,
+    in descending order of <b>marginal contribution</b>:</p> 
 
     <table>
       <tr>
@@ -477,19 +502,21 @@
 	<li>Given the abovementioned difference between male and
 	female borrowers, we expected <b>gender of the borrower</b>
 	&mdash; or, more generally and precisely,
-	of the majority of borrowers &mdash; to be among the most
+	of the <em>majority</em> of borrowers &mdash; to be among the most
 	informative features. This is confirmed, but it is somewhat surprising
 	that the <b>20-dimensional semantic contents of the loan
-	description</b> is even more informative. Then again, gender is <b>encoded</b> in various implicit
-	and explicit ways in the loan description. Check for yourself,
+	description</b> is even more informative. A plausible
+	explanation is that <b>gender is partially encoded in various implicit
+	and explicit ways in the loan description</b>. Check for yourself,
 	as an example, in
 	this <a href="http://www.kiva.org/lend/844974"
 	target="_">female</a>
 	and <a href="http://www.kiva.org/lend/844974"
 	target="_">male</a> loan description for explicit
 	gender-specific clues like pronouns. The implicit ones may be
-	hidden inside particular types of gender-specific activities (not further
-	investigated in this project).</li>
+	hidden inside particular types of gender-specific activities
+	or textual clues (not further
+	mined in this project).</li>
 	<li>The <b>month</b> in which a loan request is posted is also highly
 	informative. This was already apparent from the histogram
 	above, where the second and third quarter of each year
@@ -500,7 +527,7 @@
 
     <p>Also interesting is the direction in which each feature
     influences a positive prediction. Let's look successively at the
-    posted month features, the topic features and the other ones.</p>
+    &quot;PostedMonth&quot; features, the topic features, and the other ones.</p>
 
     <h3>What is the optimal time of year to post a loan?</h3>
 
@@ -511,21 +538,23 @@
     <figure>
       <img src="/images/LogRes_Model_Coefficients_Months.png"/>
       <figcaption>Overview of PostedMonth[Jan..Dec] features with their
-      respective logistics regression model coefficients, ranked from
+      respective logistic regression model coefficients, ranked from
       left to right in descending order</figcaption>
     </figure>
 
     <h3>What is the impact of the topics found in the loan descriptions?</h3>
 
     <p>Twelve topics contribute positively towards full funding, the
-    remaining eight negatively. The extent to which a <b>specific
-    loan description</b> contributes in either direction, depends of
-    course also on the <b>distribution of topics</b> found in that document.</p>
+    remaining eight negatively. The extent to which a <b><a href="http://www.kiva.org/lend/844974" target="_">specific
+    loan description</a></b> contributes in either direction, of course
+    also depends of
+    on the actual <b>distribution of topics</b> found in that
+    particular document.</p>
 
     <figure>
       <img src="/images/LogRes_Model_Coefficients_Topics.png"/>
       <figcaption>Overview of 20 topic features with their
-      respective logistics regression model coefficients, ranked from
+      respective logistic regression model coefficients, ranked from
       left to right in descending order &mdash;
       [<a href="/images/LogRes_Model_Coefficients_Topics.png"
       target="_">for better viewing, click here to open the graph in a
@@ -538,20 +567,22 @@
 
     <p>A <b>positive</b> contributor to full funding is the <b>total amount of
     money raised by the field partner</b>: this can be interpreted as a proxy
-      for its reliability. On the other hand, the <b>number of loans</b>
-    posted under the direction of that same field partner <b>negatively</b>
-    impacts full funding. </p>
+      for the partner's longevity and reliability. On the other hand,
+    the <b>number of loans</b> (LoansPosted)
+    that went through that same field partner's hands <b>negatively</b>
+    impacts full funding - strangely so.</p>
 
     <p><b>The more borrowers</b> take part in a loan request, <b>the better its
     chanches</b> to get fully funded. This can be interpreted as a form
     of risk reduction, the idea being that multiple borrowers
     will help and/or control each other, thereby increasing loan
-    quality. Otherwise said: lenders value collaboration between borrowers.</p>
+    quality. Otherwise said: lenders tend to appreciate and foster collaboration
+    between borrowers - with their money.</p>
 
     <figure>
       <img src="/images/LogRes_Model_Coefficients_Other_Features.png"/>
       <figcaption>Overview of the remaining features with their
-      respective logistics regression model coefficients, ranked from
+      respective logistic regression model coefficients, ranked from
       left to right in descending order</figcaption>
     </figure>
 
@@ -561,20 +592,20 @@
     getting their predisbursed loan requests backfilled</b>.</p>
 
     <p>The feature with the <b>most important negative impact</b> across the
-    whole feature set (including PostedMonth and topic features) is
+    whole feature set (<em>including</em> PostedMonth and topic features) is
     the loan amount: <b>the more money is requested, the harder it
     is to get the loan fully funded</b>. Assuming a constant allocatable
     sum per lender at a particular moment in time, it is logical that
-    more lenders are required to backfill a larger loan amount. If
-    they are not found within the expiration period, the loan does
+    more lenders are required then to backfill a larger loan amount. If
+    not enough lenders are found within the expiration period, the loan does
     not get fully funded.</p>
 
     <h3>Code organization for easy deployment</h3>
 
     <p>In order to facilitate deployment of the model in a live
-    setting and maximize code reuse, all
+    setting, and maximize code reuse, all
     relevant data preprocessing, feature creation (especially for SLDA),
-    and feature scaling were cleanly implemented in separate Python modules:
+    and feature scaling functionality was cleanly implemented in separate Python modules:
       <ul>
 	<li><a href="https://github.com/fdurant/kiva_project/blob/master/src/SldaTextFeatureGenerator.py" target="_">SldaTextFeatureGenerator</a></li>
 	<li><a href="https://github.com/fdurant/kiva_project/blob/master/src/KivaLoan.py" target="_">KivaLoan</a></li>
@@ -605,7 +636,7 @@
       <tr>
 	<td><a href="https://github.com/fdurant/kiva_project/tree/master/data/predicting_funding/logres_out" target="_">GitHub</a></td>
 	<td>Storage of the best performing model</td>
-	<td>Hassle-free and pragmatic deployment to the (transient) cloud environment</td>
+	<td>Lightweight deployment to the (until further notice transient) cloud environment</td>
       </tr>
       <tr>
 	<td><a href="https://docs.python.org/2/library/pickle.html" target="_">pickle</a></td>
@@ -648,18 +679,19 @@
     predisbursed loan requests</a> from which to choose.</p>
 
     <p>The following steps describe how we can &mdash; at least
-    virtually &mdash; augment each loan page with live information
-    from the loan funding predictor.</p>
+    virtually &mdash; <b>augment each loan page with live information
+    from the loan funding predictor</b>.</p>
 
     <h2>Step 5: Getting a prediction from the live back-end</h2>
 
     <p>
-      Disclaimer: at the time of writing, the live environment is not
+      <b>Disclaimer</b>: at the time of writing, and until further
+      notice, the live environment is not 
       meant to be running permanently. The backend will only be live
       during planned demonstrations.
     </p>
 
-    <p>A typical backend request-response cycle look like this:</p>
+    <p>A typical backend request-response cycle looks like this:</p>
 
     <figure>
       <img src="/images/loan_funding_prediction_REST_request_response.png"
@@ -672,7 +704,7 @@
     <p>Each loan funding prediction response returns:
     <ul>
       <li>the <b>prediction</b>: 0 (not fully funded) or 1 (fully funded)</li>
-      <li>the <b>prediction score</b>: a floating point number between 0 and 1</li>
+      <li>the <b>loan funding score</b>: a floating point number between 0 and 1</li>
       <li>the <b>topic scores</b>: a list of 20 topics for the loan
 	description at hand, ranked by descending
 	<a href="https://www.cs.princeton.edu/~blei/papers/BleiMcAuliffe2007.pdf"
@@ -680,13 +712,17 @@
     </ul>
     </p>
     <p>
-	Each topic is
-	represented by its 10 most prominent words. The gamma values say
-	nothing about the propensity to get funded or not; the
+	Again, each topic is
+	represented by its 10 most prominent words. In isolation, the gamma values say
+	nothing about the propensity of a given loan to get funded or not.
+	As explained earlier, the polarity or direction of the
 	relationship between each topic and the class label is
-	captured in the logistic regression model, to which these
-	gamma values serve as <em>input</em> (see the abovementioned feature group &quot;20 loan
-	description topics&quot;)</p>
+	captured in the logistic regression model. At prediction time,
+	the loan document's
+	gamma values serve as input to the logistic
+	regression model (where, oddly enough, we call them <em>beta</em>
+	values). This happens in combination with all the other features,
+	of course.</p>
 
     <h2>Step 6: Getting Kiva's information on a new loan</h2>
 
@@ -698,7 +734,7 @@
     target="_">reaches out to the Kiva REST API</a>, to get all
     relevant loan information on the fly.</p>
 
-    <h2>Step 4 revisited: result integration in Google Chrome</h2>
+    <h2>Step 4 revisited: visual integration in Google Chrome</h2>
 
     <table>
       <tr>
@@ -714,23 +750,23 @@
       </tr>
       <tr>
 	<td>jQuery<a href="http://jquery.com" target="_"></a></td>
-	<td>Shorter and faster JavaScript development</td>
+	<td>Faster JavaScript development</td>
 	<td>Creating two DOM elements that display loan funding
 	information on a Kiva loan web page</td>
       </tr>
     </table>
     
-    <p>To dynamically integrate the information received in step 5, we
+    <p>To dynamically integrate the information received in step 5, I
     wrote
-    a <a href="kivaloanfundingvisualization_0.1.0_chrome_webstore.zip"
-    target="_">Google Chrome extension</a> based
+    a Google Chrome extension based
     on <a href="http://kangoextensions.com/ "
     target="_">Kango</a> and <a href="https://jquery.com/"
     target="_">jQuery</a>. Once it is <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en">installed</a>
     and <a href="https://support.google.com/chrome/answer/167997?hl=en">activated</a>,
-    the Kiva Loan Funding Visualization displays two
+    the <a href="kivaloanfundingvisualization_0.1.0_chrome_webstore.zip"
+    target="_">Kiva Loan Funding Visualization</a> extension displays two
     new boxes inside any Kiva Loan page visited from that
-    browser. It now looks like this:</p>
+    browser. It then looks like this:</p>
 
     <figure>
       <img src="/images/kiva_loan_page_with_augmented_prediction_info.png"
@@ -744,8 +780,9 @@
     represents the binary prediction. The treshold is currently set
     at 50%. The probability is called a priori, to stress that
     the <em>actual</em> funding status (displayed by Kiva) does not play any role in
-    the predicted value. In other words, the predictor would predict exactly the same
-    probability before, during or after the funding period.</p>
+    the predicted value. In other words, the predictor would predict the same
+    probability before, during or after the funding period - with one
+    exception: the field partner features (e.g. LoansPosted), may have changed over time.</p>
    
     <p>The box below the borrower's image contains the three most
     prominent topics for the loan (description) at hand.</p>
@@ -754,13 +791,13 @@
 
     <p>In this project, I have developed an end-to-end system that enables multiple
     actors in the Kiva ecosystem to get an a priori insight into the
-    funding chances of a previously unseen loan. While the current
+    funding chances of previously unseen loans. While the current
     logistic regression model can no doubt be improved in various
     ways, its current  performance of 87.82% ROC Area Under Curve is
-    certainly sufficient for a proof of concept.</p>
+    sufficient for a proof of concept.</p>
 
       <p>As the virtual
-    integration through a browser plugin amply demonstrates, the system could
+    integration through a browser extension demonstrates, the system can
     indeed be deployed with minimum extra engineering effort, should
     Kiva wish to do so.</p>
 
@@ -769,6 +806,10 @@
     identified. This may help Kiva actors in the field to adapt certain
     behaviours or revise certain decision strategies, should they feel
     the need to do so.</p>
+
+    <p>As fas as deployment in the Kiva ecosystem is concerned, then, there
+      will be <b>more strategic and ethical questions to be answered,
+      than technical ones</b>.</p>
 
     <p>Potential avenues for model performance improvement include:
       <ul>
@@ -815,6 +856,8 @@
 	<li>all my fellow <a href="http://www.thisismetis.com/ds-alumni" target="_">Metis Data Science students (Winter Cohort
 	2015)</a>, and my fellow <a href="https://krash.io/" target="_">Krashers in Brooklyn</a>.</li>
 	<li>my family and friends at home, for keeping up with my three-month absence.</li>
+	<li>the amazing and awesome city and people of New York, for
+	their inspiration and energy.</li>
       </ul>
     </p>
 
