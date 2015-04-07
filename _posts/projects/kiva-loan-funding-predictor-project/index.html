@@ -98,43 +98,49 @@
     <h3>The downside of Kiva's growth: non-backfilled loans</h3>
 
     <p>In terms of growth, Kiva has been a phenomenal success. Since
-    it started in 2005, the number of loan requests has risen year over year. In the
+    its start in 2005, the number of loan requests has risen year over year. In the
     early years, there seems to have been enough available money in the
-    system to fully backfill most, if not all loan requests. <b>Since 2012, however, this
-    has not been the case anymore</b>, as illustrated below.</p>
+    system to fully backfill most, if not all loan requests. However, since
+    2012, a significant number of predisbursed loans do not get
+    backfilled, as is illustrated below.</p>
 
     <figure>
       <img src="/images/nr_loans_per_quarter.png" style="margin-top:20px; margin-bottom:20px;"/>
       <figcaption>Per-quarter histogram of loan requests in period 2006-2014</figcaption>
     </figure>
 
-    <p>If there has indeed been a (relative) lack of fresh inflowing
-      capital from Kiva lenders capital since 2012, it is unclear to what extent and how soon this
-      has translated into a growing refusal of
+    <p>The rising number of non-backfilled loans since 2012 may be due to the
+    relative lack of fresh inflowing capital from Kiva lenders, or to
+    an intrinsic deterioration of loan quality. Whichever the reason,
+    it is unknown if, to what extent and how soon the rising proportion of
+    non-backfilled loans has translated into a growing refusal of
       loan requests by the field partners to predisburse loans in the
-      first place: this information is not known to us. But from the
-      field partners' perspective, there must
+      first place: no data are currently available to test either of these
+    hypotheses. But from the 
+      field partners' perspective, <b>there must
       be an inherent limit to increase their
-      own capital and incur more risk. The transgression of this limit must
+      own capital and incur more risk</b>. The transgression of this limit must
       eventually <b>negatively influence the (invisible) predisbursal rate of initial loan
       requests, <em>including valid ones</em></b>.</p>
 
     <p>Especially male borrowers are lagging behind. Not
     only have they historically entered the Kiva system less
     frequently than females; 
-    but as soon as money supply could not cope anymore with demand,
-    loans to male borrowers have had a harder time getting backfilled
+    but since 2012,
+    loans to male borrowers have proportionally had a harder time
+    getting backfilled 
     than loans predisbursed to females.</p>
 
-    <p><b>So irrespective of the amount of money present in the
-    Kiva ecosystem, we should at least try to make these funds flow as efficiently as possible</b>.</p>
+    <p><b>Irrespective of the amount of money present in the
+    Kiva ecosystem at any moment, we should at least try to make these funds flow as efficiently as possible</b>.</p>
 
     <h3>Kiva micro-finance is big</h3>
 
     <p>As a final introductory note, let's see <a href="sankey.html" target="_">how money
-    flows through the global Kiva ecosystem</a>. The interactive graph below summarizes the
-      cumulative money flows for the period 2012 through 2014, between
-    countries (middle column). The left and right column do not
+    flows through the global Kiva ecosystem</a>. The interactive graph
+    below summarizes, for the period 2012 through 2014, the
+    money flows between lenders and borrowers, each grouped by
+    country (middle column). The left and right column do not
     really represent money flows, but group the countries by region,
     respectively from the lenders' and the borrowers' perspective.</p>
       
@@ -171,17 +177,18 @@
     of new loan requests</h2>
 
     <p>
-    Our <b>business goal</b> is to <b>reduce the amount of
+    The <b>business goal</b> in this project is to <b>reduce the amount of
     non-productive, sleeping
     money in the system</b>. The main observation is that <b>it is
     better for X% of loans to be 100% funded, than for 100% of loans
-    to be funded at X% each.</b> In the latter case, all funds would simply
-    return to the lenders, and not a single loan would be backfilled!</p>
+    to be funded at X% each.</b> In the latter case, following Kiva policy, all funds simply
+    return to the lenders, which means that not a single loan would be backfilled!</p>
 
     <p>
-    To reach this business goal, we propose a tool that
+    To reach this business goal, I propose a tool that
     provides an <b>a priori insight into the chance of a loan request
-    being fully funded</b> by available Kiva lender money.</p>
+    being fully funded</b> by available Kiva lender money. Next to
+    that, this study aims to uncover certain actionable insights too.</p>
 
     <p>
     Having this information at hand is potentially useful to different parties:
@@ -209,14 +216,15 @@
     loan characteristics. Since trust and transparancy are key values for Kiva
     &mdash; or any other finance system, for that matter &mdash;
     any potential deployment should only happen after careful
-    consideration of the risks and benefits involved. As a 4-week final
-    project, we make no claims in this regard. For the record:
+    consideration of the risks and benefits involved. In the framework
+    of this 4-week final
+    project, I make no further statements about this important question. For the record:
     Kiva.org was not informed about this study project before it was
     completed, and published here.</p>
 
     <h3>Solution architecture</h3>
 
-    <p>Our technical solution consists of 4 main components:
+    <p>The technical solution consists of 4 main components:
       <ul>
 	<li>Web services offered by <a href="http://kiva.org/" target="_">kiva.org</a>,
 	for <a href="http://build.kiva.org/" target="_">offline</a> and <a href="http://build.kiva.org/api" target="_">online</a> data retrieval</li>
@@ -289,10 +297,10 @@
       </tr>
     </table>
 
-    <p>In preparation of a previous project, we had already downloaded
+    <p>In preparation of a previous project, I had already downloaded
     a Kiva snapshot of approximately 775.000 loans and their
     respective lenders on February 17,
-    2015. We reused that same data in this project.</p>
+    2015. The same data were reused in this project.</p>
 
     <h2>Step 2: Predictor/classifier training and evaluation</h2>
 
@@ -320,7 +328,7 @@
     <p>
       Three types of input features were extracted from the JSON snapshot:
       <ul>
-	<li>12 <b>loan features</b> extracted from
+	<li>19 <b>loan features</b> extracted from
 	the <a href="http://api.kivaws.org/v1/loans/844974.json"
 	target="_">JSON representation</a> of a <a href="http://www.kiva.org/lend/844974" target="_">Kiva loan</a></li>
 	<li>20 <b>topic model features</b> inferred for each loan
@@ -339,20 +347,25 @@
       <ul></ul>
     </p>
 
-    <p>The data set consists of <b>20 K positive and 20 K negative</b>
-    instances, sampled from the years 2012 through 2014.</p>
+    <p>The data set consists of <b>all</b> usable loans from the years 2012
+    through 2014: <b>21.212 negative and 419.913 positive</b>
+    instances. This a priori 20/1 ratio calls for careful class weight settings during
+      model training.</p>
 
     <h3>Model training</h3>
 
-    <p>From the outset, we decided to fit
+    <p>From the outset, it was my plan to fit
     a <a href="http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
     target="_">logistic regression</a> model 
-    against the training data, using 10-fold cross validation, with
+    against the training data, using 10-fold cross validation. The
+    chosen class weight setting was 'auto', which should compensate
+    for the imbalance in the training set in terms of positive vs. negative
+    labels. I also included
     some experimentation with varying regularization parameters. Since
-    our prime goal in this project was to <b>deliver an end-to-end
+    my prime goal in this project is to <b>deliver an end-to-end
     system, rather than
-    &quot;just&quot; <a href="http://www.vogue.com/1066581/supermodel-workouts-and-trainers/"
-    target="_">train a supermodel</a></b>, we did not try 
+    only <a href="http://www.vogue.com/1066581/supermodel-workouts-and-trainers/"
+    target="_">an optimally trained &quot;supermodel&quot;</a></b>, I did not try 
     out any other algorithm here. This pragmatic choice helped us maintain
     focus throughout the project.</p>
 
@@ -365,20 +378,21 @@
 
     <h3>Incremental feature contribution to model performance</h3>
 
-    <p>As evaluation metric, we chose
+    <p>As evaluation metric, I chose
     the <a href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic"
     target="_">ROC</a> <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html"
     target="_">area under the curve</a>. To detect the <b>most
-    informative feature groups</b>, we started from an information-less
-    baseline model with 50% ROC AUC performance. We then tested each
-    of the 12 feature groups independently, selecting the best one
+    informative feature groups</b>, I started, in a 10-fold cross validation setting, 
+      from an information-less
+    baseline model with 50% ROC AUC performance. I then tested each
+    of the remaining feature groups independently, selecting the best one
     as the
     &quot;constant&quot; feature group for the next round. There, it
     was on its turn combined with
-    each of the remaining 11 feature groups; again, the winner was
+    each of the remaining feature groups; again, the winner was
     selected and added to the ranked list of feature groups. The
     end result of this iterative process is the following feature group ranking,
-    in descending order of relative contribution:</p> 
+    in descending order of marginal contribution:</p> 
 
     <table>
       <tr>
@@ -396,104 +410,166 @@
       <tr>
 	<td>Loan</td>
 	<td>Log10LoanAmount</td>
-	<td>77.69 &#37;</td>
-	<td>+ 27.69</td>
+	<td>76,50 &#37;</td>
+	<td>+ 26.50</td>
       </tr>
       <tr>
 	<td>SDLA</td>
 	<td>20 loan description topics</td>
-	<td>82.09 &#37;</td>
-	<td>+ 4.40</td>
+	<td>80.72 &#37;</td>
+	<td>+ 4.22</td>
+      </tr>
+      <tr>
+	<td>Loan</td>
+	<td>PostedMonth[Jan..Dec]</td>
+	<td>83.55 &#37;</td>
+	<td>+ 2.83</td>
       </tr>
       <tr>
 	<td>Loan</td>
 	<td>MajorityGender</td>
-	<td>84.62 &#37;</td>
-	<td>+ 2.53</td>
-      </tr>
-      <tr>
-	<td>Loan</td>
-	<td>PostedDayOfMonth &amp; PostedMonth</td>
-	<td>86.57 &#37;</td>
-	<td>+ 1.95</td>
+	<td>85.99 &#37;</td>
+	<td>+ 2.44</td>
       </tr>
       <tr>
 	<td>Loan</td>
 	<td>Log10NumberOfBorrowers</td>
-	<td>87.71 &#37;</td>
+	<td>87.13 &#37;</td>
 	<td>+ 1.14</td>
       </tr>
       <tr>
 	<td>Partner</td>
 	<td>LoansPosted &amp; TotalAmountRaised</td>
-	<td>88.02 &#37;</td>
-	<td>+ 0.31</td>
+	<td>87.42 &#37;</td>
+	<td>+ 0.29</td>
       </tr>
       <tr>
 	<td>Loan</td>
 	<td>GeoLongitude &amp; GeoLatitude</td>
-	<td>88.25 &#37;</td>
-	<td>+ 0.23</td>
+	<td>87.63 &#37;</td>
+	<td>+ 0.21</td>
       </tr>
       <tr>
 	<td>Loan</td>
 	<td>RepaymentTerm</td>
-	<td>88.34 &#37;</td>
-	<td>+ 0.09</td>
-      </tr>
-      <tr>
-	<td>Loan</td>
-	<td>BonusCreditElegibility</td>
-	<td>88.39 &#37;</td>
-	<td>+ 0.05</td>
+	<td>87.77 &#37;</td>
+	<td>+ 0.14</td>
       </tr>
       <tr>
 	<td>Partner</td>
 	<td>DelinquencyRate &amp; Rating</td>
-	<td>88.45 &#37;</td>
-	<td>+ 0.06</td>
+	<td>87.77 &#37;</td>
+	<td>+ 0.00</td>
       </tr>
       <tr>
 	<td>Loan</td>
-	<td>Log10EnglishDescriptionLength</td>
-	<td>88.47 &#37;</td>
-	<td>+ 0.02</td>
-      </tr>
-      <tr>
-	<td>Loan</td>
-	<td>HasImage &amp; HasTranslator</td>
-	<td>88.48 &#37;</td>
-	<td>+ 0.01</td>
+	<td>BonusCreditElegibility</td>
+	<td>87.82 &#37;</td>
+	<td>+ 0.05</td>
       </tr>
     </table>
 
     <p>A few observations:
       <ul>
-	<li>The mere combination of the <b>three best feature groups</b>
-	already achieves <b>84.62%</b> of ROC AUC. The additional nine feature
-	groups add less than 4 percentage points.</li>
+	<li>The mere combination of the <b>four best feature groups</b>
+	already achieves <b>85.99%</b> of ROC AUC. The additional six feature
+	groups add less than 3 percentage points.</li>
 	<li>Given the abovementioned difference between male and
 	female borrowers, we expected <b>gender of the borrower</b>
 	&mdash; or, more generally and precisely,
-	of the majority of borrowers &mdash; to be highly
-	informative. This is confirmed, but it is somewhat surprising
+	of the majority of borrowers &mdash; to be among the most
+	informative features. This is confirmed, but it is somewhat surprising
 	that the <b>20-dimensional semantic contents of the loan
-	description</b> is even more informative. Then again, this is not so
-	surprising, since gender is probably <b>encoded</b> in various implicit
+	description</b> is even more informative. Then again, gender is <b>encoded</b> in various implicit
 	and explicit ways in the loan description. Check for yourself,
 	as an example, in
 	this <a href="http://www.kiva.org/lend/844974"
 	target="_">female</a>
 	and <a href="http://www.kiva.org/lend/844974"
-	target="_">male</a> loan description for 
-	gender-specific clues like pronouns.</li>
-	<li>The <b>timing</b> of a loan request is also quite
+	target="_">male</a> loan description for explicit
+	gender-specific clues like pronouns. The implicit ones may be
+	hidden inside particular types of gender-specific activities (not further
+	investigated in this project).</li>
+	<li>The <b>month</b> in which a loan request is posted is also highly
 	informative. This was already apparent from the histogram
 	above, where the second and third quarter of each year
 	show a spike in loan requests, which has an impact on the
 	backfill ratio.</li>
       </ul>
     </p>
+
+    <p>Also interesting is the direction in which each feature
+    influences a positive prediction. Let's look successively at the
+    posted month features, the topic features and the other ones.</p>
+
+    <h3>What is the optimal time of year to post a loan?</h3>
+
+    <p>All other things being equal, it is easier to get loans fully funded that are posted in the <b>first
+    three months</b> of the calendar year. September and June are the least
+    advantageous.</p>
+
+    <figure>
+      <img src="/images/LogRes_Model_Coefficients_Months.png"/>
+      <figcaption>Overview of PostedMonth[Jan..Dec] features with their
+      respective logistics regression model coefficients, ranked from
+      left to right in descending order</figcaption>
+    </figure>
+
+    <h3>What is the impact of the topics found in the loan descriptions?</h3>
+
+    <p>Twelve topics contribute positively towards full funding, the
+    remaining eight negatively. The extent to which a <b>specific
+    loan description</b> contributes in either direction, depends of
+    course also on the <b>distribution of topics</b> found in that document.</p>
+
+    <figure>
+      <img src="/images/LogRes_Model_Coefficients_Topics.png"/>
+      <figcaption>Overview of 20 topic features with their
+      respective logistics regression model coefficients, ranked from
+      left to right in descending order &mdash;
+      [<a href="/images/LogRes_Model_Coefficients_Topics.png"
+      target="_">for better viewing, click here to open the graph in a
+      separate window</a>]</figcaption>
+    </figure>
+
+    <p>Each topic is represented here by its ten most prominent words.</p>
+
+    <h3>And what about the other features?</h3>
+
+    <p>A <b>positive</b> contributor to full funding is the <b>total amount of
+    money raised by the field partner</b>: this can be interpreted as a proxy
+      for its reliability. On the other hand, the <b>number of loans</b>
+    posted under the direction of that same field partner <b>negatively</b>
+    impacts full funding. </p>
+
+    <p><b>The more borrowers</b> take part in a loan request, <b>the better its
+    chanches</b> to get fully funded. This can be interpreted as a form
+    of risk reduction, the idea being that multiple borrowers
+    will help and/or control each other, thereby increasing loan
+    quality. Otherwise said: lenders value collaboration between borrowers.</p>
+
+    <figure>
+      <img src="/images/LogRes_Model_Coefficients_Other_Features.png"/>
+      <figcaption>Overview of the remaining features with their
+      respective logistics regression model coefficients, ranked from
+      left to right in descending order</figcaption>
+    </figure>
+
+    <p>In my system, gender is encoded as female=0, and male=1. The
+    negative impact of the MajorityGender feature therefore confirms
+    the initial hypothesis that <b>male borrowers have a harder time
+    getting their predisbursed loan requests backfilled</b>.</p>
+
+    <p>The feature with the <b>most important negative impact</b> across the
+    whole feature set (including PostedMonth and topic features) is
+    the loan amount: <b>the more money is requested, the harder it
+    is to get the loan fully funded</b>. Assuming a constant allocatable
+    sum per lender at a particular moment in time, it is logical that
+    more lenders are required to backfill a larger loan amount. If
+    they are not found within the expiration period, the loan does
+    not get fully funded.</p>
+
+    <h3>Code organization for easy deployment</h3>
 
     <p>In order to facilitate deployment of the model in a live
     setting and maximize code reuse, all
@@ -508,6 +584,7 @@
 	<li><a href="https://github.com/fdurant/kiva_project/blob/master/src/KivaLoanFundingPredictor.py" target="_">KivaLoanFundingPredictor</a></li>
       </ul>
     </p>
+
     <p>
       Finally, the best performing model
       was <a href="https://docs.python.org/2/library/pickle.html" target="_">pickled</a> and <a href="https://github.com/fdurant/kiva_project/blob/master/data/predicting_funding/logres_out/kivaLoanFundingPredictor.pkl"
@@ -665,30 +742,40 @@
     <p>The box in the upper-right corner contains the prediction
     score expressed as a (rounded) percentage, and a thumbs up/down image that
     represents the binary prediction. The treshold is currently set
-    at 50%. We call the probability a priori, to stress that
-    the <em>actual</em> funding status does not play any role in
+    at 50%. The probability is called a priori, to stress that
+    the <em>actual</em> funding status (displayed by Kiva) does not play any role in
     the predicted value. In other words, the predictor would predict exactly the same
-    value before, during or after the funding period.</p>
+    probability before, during or after the funding period.</p>
    
     <p>The box below the borrower's image contains the three most
     prominent topics for the loan (description) at hand.</p>
 
     <h2>Conclusion and further work</h2>
 
-    <p>We have developed an end-to-end system that enables multiple
+    <p>In this project, I have developed an end-to-end system that enables multiple
     actors in the Kiva ecosystem to get an a priori insight into the
     funding chances of a previously unseen loan. While the current
     logistic regression model can no doubt be improved in various
-    ways, its current  performance of 88.48% ROC Area Under Curve is
-    certainly sufficient for a proof of concept. As the virtual
-    integration through a browqser plugin amply demonstrates, the system could
+    ways, its current  performance of 87.82% ROC Area Under Curve is
+    certainly sufficient for a proof of concept.</p>
+
+      <p>As the virtual
+    integration through a browser plugin amply demonstrates, the system could
     indeed be deployed with minimum extra engineering effort, should
     Kiva wish to do so.</p>
 
+    <p> At the same time,
+    the positive or negative contribution of each feature was
+    identified. This may help Kiva actors in the field to adapt certain
+    behaviours or revise certain decision strategies, should they feel
+    the need to do so.</p>
+
     <p>Potential avenues for model performance improvement include:
       <ul>
-	<li>Alternative classifiers</li>
-	<li>Additional features. We are especially interested in
+	<li>A more refined and tuned Supervised Latent Dirichlet Allocation model</li>
+	<li>Different logistic regression settings</li>
+	<li>Alternative estimators</li>
+	<li>Additional and/or better features. I am especially interested in
 	adding &quot;trust&quot; features detected from the borrower's
 	  image. The reason is simple: when I made my first Kiva loan
 	in February, the image contents played a major role in my own
@@ -696,9 +783,7 @@
       </ul>
     </p>
 
-    <h2>References</h2>
-
-    <h3><a name="kiva_research">Research papers on Kiva</a></h3>
+    <h2><a name="kiva_research">Research papers on Kiva</a></h2>
 
     <p>
       <ul>
@@ -712,7 +797,26 @@
 
     <h2>Acknowledgements</h2>
 
-    <p>Thanks to ...</p>
+    <p>Having come at the end of this bootcamp in New York City, I would like to thank:
+      <ul>
+	<li>my
+    instructors <a href="https://www.linkedin.com/pub/irmak-sirer/2a/752/846"
+    target="_">Irmak
+    Sirer</a>, <a href="https://www.linkedin.com/profile/view?id=92036474"
+    target="_">Bo
+    Peng</a> and <a href="https://www.linkedin.com/in/ajschumacher"
+    target="_">Aaron Schumacher</a> for having turned this Data
+    Science Bootcamp into such an pleasant and rewarding
+    experience. You guys rock!</li>
+	<li>my <a href="https://krash.io/" target="_">Krash Brooklyn</a> housemate and PhD
+	candidate <a href="https://www.linkedin.com/in/mgerritzen" target="_">Marc Gerritzen</a> for
+	his valuable comments on an earlier version of this blog
+	post, and, more generally, his interest in this project.</li>
+	<li>all my fellow <a href="http://www.thisismetis.com/ds-alumni" target="_">Metis Data Science students (Winter Cohort
+	2015)</a>, and my fellow <a href="https://krash.io/" target="_">Krashers in Brooklyn</a>.</li>
+	<li>my family and friends at home, for keeping up with my three-month absence.</li>
+      </ul>
+    </p>
 
   </body>
 </html>
