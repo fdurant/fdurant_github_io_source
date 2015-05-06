@@ -23,7 +23,7 @@ Science Community.
 To gain access, simply register first via your Facebook,
 LinkedIn, Twitter or Google Plus account. 
 
-If you prefer not to register or are just short of time, here's the slide deck:
+If you prefer not to register or are just short on time, here's the slide deck:
 
 <iframe
 src="//www.slideshare.net/slideshow/embed_code/key/E3YuFhceWq3Q78"
