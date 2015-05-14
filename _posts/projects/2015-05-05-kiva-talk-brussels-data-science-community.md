@@ -55,7 +55,7 @@ fully fund a loan. If not, the act of consistent highlighting
 obviously steers lending behavior, favoring some loan proposals over
 others.
 
-The really interesting question, now, is  for Kiva to decide **whether the a
+The really interesting question, now, is  **whether the a
 priori prediction offered by the model should play a role in
 highlighting soon-to-expire loans** (and/or other types of featured
 loans).
