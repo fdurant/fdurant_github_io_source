@@ -7,13 +7,13 @@ excerpt:
 tags: ["analog","books", "touch", "feel", "taste"]
 image:
   feature:
-date: 2016-03-04T10:00:00-00:00
+date: 2016-03-06T07:00:00-00:00
 share: true
 ---
 
 One of my favorite pastimes since I was a philology student in the late eighties has
-been, rather unsurprisingly, to visit bookstores. In my [student][kuleuven] town [Leuven][leuven], I spent
-hours - and tons of money - at [Boekhandel Peeters][peeters], specialized in the liberal
+been, rather unsurprisingly, visiting bookstores. In my [student][kuleuven] town [Leuven][leuven], I spent
+hours - and relative tons of money - at [Boekhandel Peeters][peeters], specialized in the liberal
 arts. For computing and other
 so-called hard sciences, Wouters was my 
 preferred place to go. It sadly [went bankrupt][wouters_bust] in 2006,
@@ -22,7 +22,7 @@ when it was swallowed by the cooperative [Acco][acco], itself founded in
 
 In 1995, just after I started my professional career, [Jeff
 Bezos][jeff_bezos] founded [Amazon.com][amazon]. The brick-and-mortar
-bookstore as we knew it was indeed never going to be the same. In the
+bookstore as we knew it was indeed never going to be the same as before. In the
 US, super-bookstore chain [Borders][borders] [didn't adapt fast
 enough][borders_5reasons], started going downhill and finally
 [disappeared][borders_bust] in 2011. [Barnes & Noble][barnes_noble]
@@ -39,7 +39,7 @@ offer. That can be a combination of:
 - *à la limite*, silent whispers from the other *flâneurs*
 
 Yesterday, I was lucky enough to discover such a place in the [Librairie
-Albertine][albertine]. The whole atmosphere breathes *luxe, calme et volupté*, as [Charles B.][baudelaire] would say.
+Albertine][albertine] in New York City. The whole atmosphere breathes *luxe, calme et volupté*, as [Charles B.][baudelaire] would say.
 
 
 <figure>
@@ -47,17 +47,21 @@ Albertine][albertine]. The whole atmosphere breathes *luxe, calme et volupté*, 
 	<figcaption>The Marcel Proust Reading Room at the Librairie Albertine in NYC</figcaption>
 </figure>
 
-Other bookstores that I particularly recommend include:
+Other bookstores that I have visited and particularly like include:
 
 - [Passa Porta][passa_porta] and [Tropismes][tropismes] in Brussels
 - [Barnes & Noble on 5th Avenue][barnes_noble_5th_av] in New York City
-- [The MIT Press Bookstore][mit_press] and [Harvard Bookstore][harvard] in Cambridge, MA
+- [The Cambridge University Press Bookshop][cup] in Cambridge, England
+- [The MIT Press Bookstore][mit_press], [Coop][coop] and [Harvard Bookstore][harvard] in Cambridge, Massachusetts
 
 Ironically, Amazon.com recently announced [plans to open
 hundreds of **physical** bookstores][amazon_announcement].
 
 I fear the worst, but hope for the best!
 
+<hr/>
+
+**<small>Note: article updated on Sun March 7th, 2016</small>**
 
 [kuleuven]: http://www.kuleuven.be/english
 [leuven]: https://en.wikipedia.org/wiki/Leuven
@@ -80,3 +84,5 @@ I fear the worst, but hope for the best!
 [barnes_noble_5th_av]: https://stores.barnesandnoble.com/store/2234
 [mit_press]: http://web.mit.edu/bookstore/www/
 [harvard]: http://www.harvard.com/about/hbs_in_brief/
+[cup]: http://www.cambridge.org/about-us/visit-bookshop
+[coop]: http://store.thecoop.com
