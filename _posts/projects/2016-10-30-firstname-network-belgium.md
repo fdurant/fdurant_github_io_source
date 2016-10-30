@@ -12,10 +12,10 @@ share: true
 ---
 
 I've been working &mdash; well, playing &mdash; with network visualization tools like [Gephi](https://gephi.org) or [yEd](http://www.yworks.com/products/yed) for a couple of years now.
-But for confidence reasons, none of this work could be openly shared.
+But for confidentiality reasons, none of this work could be openly shared.
 
 As it happens, yesterday afternoon, with a cosy cup of coffee and an even cosier piece of ricetart at my favorite [Pain Quotidien](http://www.lepainquotidien.be/en/store/le-pain-quotidien-sablon/),
-I downloaded the [full list of first names given to babies](http://statbel.fgov.be/nl/modules/publications/statistiques/bevolking/bevolking_-_voornamen_van_de_pasgeborenen_1995-2014.jsp) born in Belgium over the last 20 years. And wondered how this could be turned into a network.
+I downloaded the [full list of first names given to babies](http://statbel.fgov.be/nl/modules/publications/statistiques/bevolking/bevolking_-_voornamen_van_de_pasgeborenen_1995-2014.jsp) born in Belgium over the last 20 years. And wondered how this data set could be turned into a network.
 
 After a moderately short labor of [134 lines of program code][github_code] &mdash; including quite a number of fruitful multiplications &mdash; two _orthographic word similarity networks_ were born. In layman's language: similarly looking names are linked, and therefore visualized close(r) to one another.
 
