@@ -21,9 +21,7 @@ After a moderately short labor of [134 lines of program code][github_code] &mdas
 
 The [girls' name network][pdf_girls] connects 1900 names. Here's a sample: 
 
-<figure>
-	<img src="/images/girl_name_network.jpg" alt="A section of the 1900 node girls' name network"/>
-</figure>
+[<img src="/images/girl_name_network.jpg">][pdf_girls]
 
 Marie(ke) is quite a popular name indeed:
 
@@ -31,9 +29,7 @@ Marie(ke) is quite a popular name indeed:
 
 The [young boys' network][pdf_boys] contains 1500 names in total, including:
 
-<figure>
-	<img src="/images/boy_name_network.jpg" alt="A section of the 1500 node boys' name network"/>
-</figure>
+[<img src="/images/boy_name_network.jpg">][pdf_boys]
 
 So no, Jef, you're not alone! 
 
