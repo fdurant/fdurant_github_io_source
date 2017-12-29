@@ -35,7 +35,7 @@ some internal logic.
 In these times where the **[half-life of knowledge][knowledgehalflife]** is getting **shorter and shorter**, it is more 
 important than ever to make **conscious investment choices**.
 
-So if you're faced with the choice to spend your precious time, energy and money in an time-tested, mainstream
+So if you're faced with the choice to spend your precious time, energy and money on an time-tested, mainstream
 and/or brand new technology, here's some advice.
 
 # Guideline 1: Know your (local) industry
