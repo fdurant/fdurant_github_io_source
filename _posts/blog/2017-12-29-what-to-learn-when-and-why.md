@@ -92,7 +92,7 @@ to becoming the next incumbent.
 # Guideline 4: Show, don't tell
 
 Are you willing to blindly link your professional fate to that of a traditional, incumbent company? If not, you should
-at all times **be willing and capable of leaving tomorrow**, so to speak. To reach that level of agility and freedom, never stop investing
+at all times **be willing and able to leave tomorrow**, so to speak. To reach that level of agility and freedom, never stop investing
 in your knowledge. But more is needed.
 
 Money is a convention based on trust, and so is knowledge. **Anyone can be an expert, on the condition that others are willing to
