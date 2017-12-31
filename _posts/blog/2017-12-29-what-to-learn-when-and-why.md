@@ -82,7 +82,7 @@ Secondly, on a wider scale, also balance your investments according to their
 **expected payback time**. Knowledge decay may be accelerating on average,
 but an investment in an MBA is still more time-tested than the cost of learning the newest
 web development stack. **Mix infrequent long-term investments** (personal examples: MA, MSc, MBA, [data science bootcamp][thisismetis])
-**with more frequent and short-lived investments**
+**with more frequent short-lived investments**
 (recent examples: MOOCs on [Google Cloud Platform][degcp] and on [Deep Learning][deeplearning]).
 
 Combining short and longer investment cycles significantly reduces the risk of falling through the professional cracks when an
