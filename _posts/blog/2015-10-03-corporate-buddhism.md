@@ -11,7 +11,7 @@ share: true
 
 # Conference call
 
-> Everybody go on mute<br/>
+> Let's all go on mute<br/>
 > One hour full of silence<br/>
 > Now that's a brainstorm
 
