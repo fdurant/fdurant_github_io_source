@@ -27,7 +27,7 @@ Data science reached the age of consent &mdash; [sexiest
 job][sexiestjob], remember &mdash; just 5 years ago. And if you
 believe the newspapers, the age of artificial intelligence has now
 finally arrived. With &mdash; would you believe it &mdash; the [chatbot][chatbots]
-aka conversational interface as one of their poster children. 
+aka conversational interface as one of its poster children. 
 
 Back to Google. Looking around in their classroom, I seemed to be the only
 attendee older than 35. By a wide margin, I must admit. Logically, most of the
