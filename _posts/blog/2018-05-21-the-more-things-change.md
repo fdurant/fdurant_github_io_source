@@ -43,8 +43,8 @@ Networks][tellme] (a former employer of mine), [BeVocal][bevocal], and
 [Voxeo][voxeo]? Let alone 20-year old technologies like
 [VoiceXML][voicexml] or the [Speech Synthesis Markup Language][ssml] aka SSML?
 
-I'm afraid I do. For the simple reason that for the better part of a decade, I
-made a living out of building voice applications with said platforms
+I'm afraid I do. For the simple reason that for the better part of a decade, [I
+made a living out of building voice applications][prompt] with said platforms
 and technologies. Pleasant surprise: [SSML][ssml] has survived the generational 
 gap. It is actively [supported in the Google Actions
 Simulator][google_actions_ssml].
@@ -102,3 +102,4 @@ Balogh. I bought it in ... 2004.
 [google-home]: https://store.google.com/product/google_home
 [google-assistant]: https://assistant.google.com/
 [google-actions]: https://developers.google.com/actions/
+[prompt]: http://blog.prompt-speechapps.com
