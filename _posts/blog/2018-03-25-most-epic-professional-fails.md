@@ -96,7 +96,7 @@ Oh, never mind!
 _Good_: It was damned **COOL heh hehheh heheheheh heh heh**<br/>
 _Bad_: I **never met Beavis & Butthead** in person
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ii2L_cagOR4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQUaguZawJQ" frameborder="0" allowfullscreen></iframe>
 
 So, what else did I suck at?
 
