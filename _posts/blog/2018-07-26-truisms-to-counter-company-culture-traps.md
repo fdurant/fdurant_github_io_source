@@ -191,7 +191,7 @@ and execute decisions fast, **veto power kills progress**.
 ### #5. Think networks, not hyperdimensional spaces
 
 There is a good reason why MBA students all over the world are
-commonly exposed to [Boston Consulting Groups' 2x2
+commonly exposed to [Boston Consulting Group's 2x2
 matrices][bcg2x2]: that seems to be the maximum number of dimensions
 that ordinary mortals &mdash;including the same students, of
 course&mdash; are able to visually digest.
@@ -282,13 +282,13 @@ Simply stated, companies need to make the following **structural changes**:
 
 - less centralized control, more trust in distributed knowledge and skills (see fewer meetings)
 - fewer committees, more self-organization and devolution of decision power (see Agile)
-- fewer hand-offs from silo to silo, more customer-focused end-to-end thinking and automation (see DevOps)
+- fewer hand-overs from silo to silo, more customer-focused end-to-end thinking and automation (see DevOps)
 - organize the company in terms of customer-focused value paths, that stream through networks of autonomous cells. Somewhat like physical goods that pass swiftly through a supply chain (see complex systems)
 - less top-down and idealistic descriptions of hyperdimensional organizations with roles and functions, more focus on locally decided purpose, self-development and self-determination (see my other post on [what to learn when and why][whattolearnwhen])
 - think less in terms of projects and portfolios. **Bring work to (networks of) (teams of) people, rather than people to work**
 
 In short: rent, buy and/or build the **innovation highway to
-production** _first_: your ten-ton truck drivers will come forward,
+production** _first_: your ten-ton truck drivers will step forward,
 and use it.
 
 **Wanna bet?**
