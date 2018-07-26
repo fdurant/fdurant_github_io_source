@@ -193,7 +193,7 @@ and execute decisions fast, **veto power kills progress**.
 There is a good reason why MBA students all over the world are
 commonly exposed to [Boston Consulting Group's 2x2
 matrices][bcg2x2]: that seems to be the maximum number of dimensions
-that ordinary mortals &mdash;including the same students, of
+that ordinary mortals &mdash;including those same students, of
 course&mdash; are able to visually digest.
 
 An "intelligent" yet static design of an organization that requires its
