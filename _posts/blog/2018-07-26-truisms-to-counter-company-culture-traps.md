@@ -84,7 +84,7 @@ generations. They do so by "selecting" slight variations in their individuals
 lucky enough to have adapted better than others to their changing
 environments.
 Seen holistically over time and from a distance, it looks as if the species
-has survived. Likewise, **in order for company (culture) to keep on
+has survived. Likewise, **in order for a company (culture) to keep on
 thriving** across generations, **it needs to adapt** every now and
 then. The driver for change, obviously, is the fast-moving political,
 socio-economical, business and technological environment. In
