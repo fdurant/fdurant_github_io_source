@@ -112,7 +112,7 @@ enough**. Reinvent yourself, or someone else will.
 In any long-standing organization, culture is just as much a
 matter of emotional experience as of rational learning. That's why it
 takes quite a while to fully integrate or assimilate into a new
-environment. Unfortunate consequence: **strong cultures takes more time to
+environment. Unfortunate consequence: **strong cultures take more time to
 adapt, i.e. to _unlearn_,** when such becomes a necessity.
 
 Apart from norms, habits and regulations, company culture manifests itself
