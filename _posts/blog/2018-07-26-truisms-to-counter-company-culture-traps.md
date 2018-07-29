@@ -210,8 +210,8 @@ prosper and function, though: examples from nature and biology abound.
 The condition is that the individual cells that make them up only
 need to know three things: **their own purpose, that of their immediate
 dependents, and (possibly) which services their dependees use.** How
-the cells want to operate **internally, is for them &mdash;and them
-only&mdash; to decide.**
+the cells want to operate **internally, is for them &mdash;and only
+them&mdash; to decide.**
 
 <figure>
 	<img src="/images/connected_company.jpg" alt="The connected company"/>
