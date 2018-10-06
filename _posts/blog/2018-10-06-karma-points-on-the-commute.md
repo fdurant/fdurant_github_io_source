@@ -5,7 +5,7 @@ modified:
 categories: blog
 excerpt:
 tags: ["detox", "london", "new age", "tube", "wellness", "spiritualism"]
-date: 2018-10-05T20:45:00-00:00
+date: 2018-10-06T11:45:00-00:00
 share: true
 ---
 
