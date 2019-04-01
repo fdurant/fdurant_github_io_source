@@ -10,24 +10,22 @@ image:
 
 Hello! My name is Frederik Durant, I'm a native from [Brussels, Belgium][brussels].
 
-This .data ("dot data") blog saw the light at the end of 2014. At the
+This .data ("dot data") blog saw the light in December 2014. At the
 time, I was preparing for a self-sponsored sabbatical from [Nuance
 Communications][nuance], where I worked as R&D Manager of Natural
-Language Understanding in the Automotive domain. The larger part of my
+Language Understanding for the Automotive market. The larger part of my
 sabbatical was devoted to a 12-week [Data Science
 Bootcamp][metis-datascience] at [Metis][metis] in the amazing city of
 New York.
 
-After the bootcamp, I returned home and took up a job as [Staff Member
+After the bootcamp, I returned home and went to work as [Staff Member
 in Data Innovation at Colruyt Group][colruyt], Belgium's largest food
 retailer.
 
-Starting September 2018, I spend my working weeks as a Sr. Data
-Scientist at [Aire Labs][airelabs] in London (Shoreditch), UK. Each
+Since September 2018, I work during the week as a Sr. Data
+Scientist at [Aire Labs][airelabs] in Shoreditch (London), UK. Each
 Friday evening, I travel back to Brussels to spend the weekend at home
-with my wife and daughters. Long live Eurostar!
-
-Why .data as a name? Well, I started my career in the early [dotcom][dotcom] era. These days of data (science) hype somehow remind me of them, that's all. And it surely allows for a nice logo :-)
+with my wife and daughters. Long live the Eurostar!
 
 [brussels]: http://en.wikipedia.org/wiki/Brussels
 [nuance]: http://www.nuance.com/
