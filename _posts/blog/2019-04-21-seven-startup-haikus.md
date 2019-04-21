@@ -5,7 +5,7 @@ modified:
 categories: blog
 excerpt:
 tags: ["poetry", "haiku", "startup"]
-date: 2019-04-20T00:22:00-00:00
+date: 2019-04-21T00:08:45-00:00
 share: true
 ---
 
@@ -39,14 +39,14 @@ share: true
 > Insists the Siamese twin<br/>
 > While you think for two
 
-# Continuous disintegration
+# Shift left right
 
-> Arabic Python<br/>
-> No need for curly braces<br/>
-> Testing shifted right
+> Pickled Arabic<br/>
+> Curly braced Python objects<br/>
+> Eating their own tail
 
 # Curtain Road Works
 
-> The jackhammers drill<br/>
+> Jackhammers drilling<br/>
 > As noisy signals erupt<br/>
-> Compressed Aire galore
+> Compressed Aire explodes
