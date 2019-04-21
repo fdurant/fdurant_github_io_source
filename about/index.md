@@ -11,10 +11,7 @@ image:
 Hello! My name is Frederik Durant, I'm a native from [Brussels, Belgium][brussels].
 
 This .data ("dot data") blog saw the light in December 2014. At the
-time, I was preparing for a self-sponsored sabbatical from [Nuance
-Communications][nuance], where I worked as R&D Manager of Natural
-Language Understanding for the Automotive market. The larger part of my
-sabbatical was devoted to a 12-week [Data Science
+time, I was preparing for a 12-week [Data Science
 Bootcamp][metis-datascience] at [Metis][metis] in the amazing city of
 New York.
 
@@ -22,10 +19,9 @@ After the bootcamp, I returned home and went to work as [Staff Member
 in Data Innovation at Colruyt Group][colruyt], Belgium's largest food
 retailer.
 
-Since September 2018, I work during the week as a Sr. Data
-Scientist at [Aire Labs][airelabs] in Shoreditch (London), UK. Each
-Friday evening, I travel back to Brussels to spend the weekend at home
-with my wife and daughters. Long live the Eurostar!
+Since September 2018, I've been commuting weekly between Brussels and
+London. From Monday morning to Friday evening, I live startup life as
+a Sr. Data Scientist at [Aire Labs][airelabs] in Shoreditch.
 
 [brussels]: http://en.wikipedia.org/wiki/Brussels
 [nuance]: http://www.nuance.com/
