@@ -61,5 +61,5 @@ But the hug was mine.
 </figure>
 
 
-[cassie_kozyrkov]: https://www.linkedin.com/profile/view?id=27312399
+[cassie_kozyrkov]: https://www.linkedin.com/in/cassie-kozyrkov-9531919/
 [metis-datascience]: http://www.thisismetis.com/data-science
