@@ -19,9 +19,12 @@ After the bootcamp, I returned home and went to work as [Staff Member
 in Data Innovation at Colruyt Group][colruyt], Belgium's largest food
 retailer.
 
-Since September 2018, I've been commuting weekly between Brussels and
-London. From Monday morning to Friday evening, I live startup life as
+From September 2018 to August 2020, I commuted weekly between Brussels and
+London. From Monday morning to Friday evening, I was
 a Sr. Data Scientist at [Aire Labs][airelabs] in Shoreditch.
+And then Covid-19 sent me home.
+
+In August 2020, I joined [Ester][ester] as co-founder and CTO.
 
 [brussels]: http://en.wikipedia.org/wiki/Brussels
 [nuance]: http://www.nuance.com/
@@ -31,3 +34,4 @@ a Sr. Data Scientist at [Aire Labs][airelabs] in Shoreditch.
 [dotcom]: http://en.wikipedia.org/wiki/Dot-com_bubble
 [colruyt]: http://frederikdurant.com/blog/changing-course/
 [airelabs]: http://aire.io
+[ester]: https://www.ester.ai/
