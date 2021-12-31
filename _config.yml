@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Frederik Durant's .data blog
+title: Frederik Durant's randomly ordered bytes
 locale: en_US
-description: On a data science sabbatical in NYC - and beyond
+description: from Brussels, New York, London and the cloud
 logo: dot_data_512x512.png
 search: true
 url: 
@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Frederik Durant
-  avatar: frederik_durant_201710_200x200.jpg
+  avatar: frederik_wework_botanic_headshot_400x400.jpeg
   email: #you@email.com
   disqus-shortname:
   twitter: #username

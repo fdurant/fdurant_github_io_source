@@ -93,7 +93,6 @@ in a word. And a song.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4s25ZFwjbYs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br/>
 > Swagger, style and charm<br/>
 > Ascended from outer space<br/>
 > Not just for one day
@@ -108,7 +107,6 @@ in a word. And a song.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xFrGuyw1V8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br/>
 > Elegance and sway<br/>
 > Image of an unborn time<br/>
 > Wait, I'm on my way
