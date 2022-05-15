@@ -56,7 +56,7 @@ Might just as well be good for a laugh.
 
 If God exists, I'm sure _they_ wouldn't mind.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E3zQYQbrQzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ye_YSWTVaCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The thrill of not being humbled
 
