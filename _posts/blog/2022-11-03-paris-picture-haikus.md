@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Haïkus parisiens &mdash; en fran&ccedil;ais"
+title: "Haïkus parisiens"
 modified:
 categories: blog
 excerpt:
