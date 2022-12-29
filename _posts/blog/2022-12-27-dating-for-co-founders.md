@@ -13,7 +13,7 @@ share: true
 <figcaption><a href="https://englishhistory.net/keats/letters/fanny-brawne-letters-march-1820/" target="_blank">Fanny Brawne</a> awaiting John Keats</figcaption>
 </figure>
 
-_Warning: I wrote this article without any use of an [artifical
+_Warning: I wrote this article without any use of an [artificial
 Large Language Model][chatgpt] &mdash; except my own._
 
 A favourable ocean wind sent me [Esther Perel's pre-startup counselling questions][esther_perel_startup]. With a fairly recent startup failure and another botched
