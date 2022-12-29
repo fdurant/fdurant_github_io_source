@@ -132,7 +132,7 @@ Then again, I haven't exactly kicked the bucket yet.
 Either way, leaving this life with too many savings on the bank and too few lived
 experiences sounds like the culmination of stupidity. So timing is of essence.
 
-In a profesionnaly setting, I have worked in a startup with too much money
+In a professional setting, I have worked in a startup with too much money
 in the bank &mdash; leading to bloated teams and ridiculously high monthly
 cloud computing bills. It didn't end well.
 
@@ -145,7 +145,7 @@ As a student, I had enough, but lived frugally. I preferred
 my record collection to my wardrobe. Still enjoying those records, by the way!
 The clothes and shoes have long gone.
 
-Profesionally, I have also worked in a(nother) startup where money was scarce.
+Professionally, I have also worked in a(nother) startup where money was scarce.
 Unfortunately it was partially spent on frivolities like coaching sessions,
 website redesigns and marketing campaigns, even before the product was built.
 Again, it didn't end well.
